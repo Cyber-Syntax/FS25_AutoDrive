@@ -63,6 +63,7 @@ ADInputManager.actionsToInputs = {
     {"ADRepairVehicle", "input_repairVehicle", false, true},
     {"ADCopySettings", "input_copySettings", false, true},
     {"ADPasteSettings", "input_pasteSettings", false, true},
+    {"ADCreateFieldPoints", "input_createFieldPoints", false, true},
 }
 
 --[[
@@ -579,4 +580,33 @@ end
 
 function ADInputManager:input_pasteSettings(vehicle, farmId, uniqueUserId)
     ADUserDataManager:applySettingsClipboard(vehicle, uniqueUserId)
+end
+
+function ADInputManager:input_createFieldPoints(vehicle, farmId, uniqueUserId)
+    if vehicle == nil or vehicle.ad == nil or vehicle.ad.stateModule == nil then
+        return
+    end
+    local isOnField = vehicle.getIsOnField and vehicle:getIsOnField()
+    if isOnField and AutoDrive.isInExtendedEditorMode() then
+        local localFieldID
+        local vx, _, vz = getWorldTranslation(vehicle.components[1].node)
+        local farmland = g_farmlandManager:getFarmlandAtWorldPosition(vx, vz)
+        if farmland then
+            local field = farmland:getField()
+            if field then
+                localFieldID = field:getId()
+                if localFieldID then
+                    local deletedWaypoints = ADGraphManager:removeFieldWaypoints(localFieldID)
+                end
+            end
+        end
+        if localFieldID then
+            local wayPoints = FieldPointGenerator:getWayPointsForFieldID(ADGraphManager:getWayPoints(), localFieldID, -AutoDrive.getSetting("fieldPointOffset"), AutoDrive.getSetting("maxFieldPointDistance"))
+            if wayPoints and #wayPoints > 0 then
+                for _, wp in pairs(wayPoints) do
+                    ADGraphManager:createWayPointWithConnections(wp.x, AutoDrive:getTerrainHeightAtWorldPos(wp.x, wp.z), wp.z, wp.out, wp.incoming, AutoDrive.FLAG_FIELD_POINT, false, false, false, wp.fieldID)
+                end
+            end
+        end
+    end
 end

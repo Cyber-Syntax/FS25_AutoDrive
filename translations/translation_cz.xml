@@ -291,6 +291,10 @@
 		<text name="gui_ad_RecordDriveDirectionOffset_tooltip"			text="Posunutí záznamu z vozidla doleva (-0,1 .. -6 m) nebo doprava (0,1 .. 6 m). Při jízdě vzad se záznam zastaví!" />
 		<text name="gui_ad_RecordOppositeDriveDirectionOffset"			text="Záznam posunu v opačném směru jízdy" />
 		<text name="gui_ad_RecordOppositeDriveDirectionOffset_tooltip"	text="Posunutí záznamu z vozidla doleva (-0,1 .. -6 m) nebo doprava (0,1 .. 6 m). Při jízdě vzad se záznam zastaví!" />
+		<text name="gui_ad_fieldPointOffset"							text="Fieldpoint Offset" />
+		<text name="gui_ad_fieldPointOffset_tooltip"					text="create field points inside (-0.2 .. -6m) or outside (0.2 .. 6m) erzeugen. 0 at field border" />
+		<text name="gui_ad_maxFieldPointDistance"						text="field point max. distance" />
+		<text name="gui_ad_maxFieldPointDistance_tooltip"				text="create field points with max. distance of 2 .. 25 m" />
 		<text name="gui_ad_settingsPage_title"							text="Nastavení - AutoDrive" />
 		<text name="gui_ad_userSettingsPage_title"						text="Uživatelské nastavení - AutoDrive" />
 		<text name="gui_ad_vehicleSettingsPage_title"					text="Nastavení vozidla - AutoDrive" />

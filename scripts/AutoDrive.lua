@@ -76,6 +76,7 @@ AutoDrive.FLAG_NONE = 0
 AutoDrive.FLAG_SUBPRIO = 1
 AutoDrive.FLAG_TRAFFIC_SYSTEM = 2
 AutoDrive.FLAG_TRAFFIC_SYSTEM_CONNECTION = 4
+AutoDrive.FLAG_FIELD_POINT = 8
 
 -- add this to measured size of vehicles
 AutoDrive.DIMENSION_ADDITION = 0.2

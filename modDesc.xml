@@ -109,6 +109,7 @@ Changelog: Необходимые корректировки для FS25, нас
 		<action name="ADRepairVehicle"/>		
 		<action name="ADCopySettings"/>
 		<action name="ADPasteSettings"/>
+		<action name="ADCreateFieldPoints"/>
 	</actions>
 
 	<inputBinding>
@@ -178,6 +179,9 @@ Changelog: Необходимые корректировки для FS25, нас
 		</actionBinding>
 		<actionBinding action="ADPasteSettings">
 			<binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_v" axisComponent="+" neutralInput="0" index="1" />
+		</actionBinding>
+		<actionBinding action="ADCreateFieldPoints">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_lshift KEY_f" axisComponent="+" neutralInput="0" index="1" />
 		</actionBinding>
 	</inputBinding>
 </modDesc>
