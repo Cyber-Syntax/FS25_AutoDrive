@@ -60,7 +60,9 @@ ADInputManager.actionsToInputs = {
     {"ADToggleAutomaticUnloadTarget", "input_toggleAutomaticUnloadTarget", true, true},
     {"ADToggleAutomaticPickupTarget", "input_toggleAutomaticPickupTarget", true, true},
     {"ADToggleLoadByFillLevel", "input_toggleLoadByFillLevel", true, true},
-    {"ADRepairVehicle", "input_repairVehicle", false, true}
+    {"ADRepairVehicle", "input_repairVehicle", false, true},
+    {"ADCopySettings", "input_copySettings", false, true},
+    {"ADPasteSettings", "input_pasteSettings", false, true},
 }
 
 --[[
@@ -102,7 +104,7 @@ function ADInputManager.onActionCall(vehicle, actionName)
     end
 end
 
-function ADInputManager:onInputCall(vehicle, input, farmId, sendEvent)
+function ADInputManager:onInputCall(vehicle, input, farmId, uniqueUserId, sendEvent)
     local actualFarmId = farmId or 0
     if actualFarmId == 0 then
         actualFarmId = AutoDrive:getAIFrameFarmId() or 0
@@ -130,12 +132,10 @@ function ADInputManager:onInputCall(vehicle, input, farmId, sendEvent)
                 end
             end
 
-            func(ADInputManager, vehicle, actualFarmId)
+            func(ADInputManager, vehicle, actualFarmId, uniqueUserId)
             break
         end
     end
-
-
 end
 
 -- Sender only events
@@ -571,4 +571,12 @@ function ADInputManager:input_repairVehicle(vehicle, farmId)
     else
         AutoDriveMessageEvent.sendMessageOrNotification(vehicle, ADMessagesManager.messageTypes.ERROR, "$l10n_AD_Driver_of; %s $l10n_AD_No_Repair_Station;", 5000, vehicle.ad.stateModule:getName())
     end
+end
+
+function ADInputManager:input_copySettings(vehicle, farmId, uniqueUserId)
+    ADUserDataManager:getSettingsClipboard(vehicle, uniqueUserId)
+end
+
+function ADInputManager:input_pasteSettings(vehicle, farmId, uniqueUserId)
+    ADUserDataManager:applySettingsClipboard(vehicle, uniqueUserId)
 end

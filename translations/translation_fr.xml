@@ -61,6 +61,8 @@
 		<text name="input_ADToggleAutomaticPickupTarget"				text="AD: Choix automatique du point de chargement" />
 		<text name="input_ADToggleAutomaticUnloadTarget"				text="AD: Choix automatique du point de déchargement" />
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: Toggle loading by fill level" />
+		<text name="input_ADCopySettings"								text="AD: Copy settings" />
+		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
 		<text name="hud_avoidFruit"									text="AD: Éviter les cultures" />
 		<text name="hud_startHelper"									text="AD: Démarrer AI/CP à la destination" />
 		<text name="AD_parkVehicle_noPosSet"							text="Pas de parking attribué. Veuillez sélectionner la (Destination actuelle) et corriger avec le clic droit de souris sur le 'P' HUD." />
@@ -91,6 +93,9 @@
 		<text name="AD_lctrl_for_creation"								text="CTRLG pour créer" />
 		<text name="AD_lalt_for_deletion"								text="ALTG pour effacer" />
 		<text name="AD_lshift_for_reverse"								text="MAJG marche arrière" />
+		<text name="AD_settings_copied"								text="Settings copied" />
+		<text name="AD_settings_pasted"								text="Settings pasted" />
+		<text name="AD_settings_clipboard_empty"						text="Copy settings first!" />
 		<text name="gui_ad_Setting"									text="AutoDrive - paramètres" />
 		<text name="gui_ad_collisionHeigth"							text="Hauteur de collision au sol" />
 		<text name="gui_ad_collisionHeigth_tooltip"					text="Réglage de la détection de collision devant le véhicule. Si d'autres véhicules ne sont pas détectés pendant la conduite, réduisez progressivement.(Par défaut 2m)" />

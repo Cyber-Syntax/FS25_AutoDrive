@@ -61,6 +61,8 @@
 		<text name="input_ADToggleAutomaticPickupTarget"				text="AD: Toggle automatic pickup target" />
 		<text name="input_ADToggleAutomaticUnloadTarget"				text="AD: Toggle automatic unload target" />
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: Toggle loading by fill level" />
+		<text name="input_ADCopySettings"								text="AD: Copy settings" />
+		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
 		<text name="hud_avoidFruit"									text="AD: Evitar cultura" />
 		<text name="hud_startHelper"									text="AD: Iniciar o AI/CP no destino" />
 		<text name="AD_parkVehicle_noPosSet"							text="Nenhum destino de estacionamento atribuído. Atribua o destino atualmente selecionado com o botão direito do mouse." />
@@ -91,6 +93,9 @@
 		<text name="AD_lctrl_for_creation"								text="LCTRL para criar" />
 		<text name="AD_lalt_for_deletion"								text="LALT para apagar" />
 		<text name="AD_lshift_for_reverse"								text="RSHIFT reverse drive" />
+		<text name="AD_settings_copied"								text="Settings copied" />
+		<text name="AD_settings_pasted"								text="Settings pasted" />
+		<text name="AD_settings_clipboard_empty"						text="Copy settings first!" />
 		<text name="gui_ad_Setting"									text="AutoDrive - Definições" />
 		<text name="gui_ad_collisionHeigth"							text="Altura da colisão sobre o chão" />
 		<text name="gui_ad_collisionHeigth_tooltip"					text="Configuração para deteção de colisão na frente do veículo. Se outros veículos não forem detetados durante a condução, reduzir passo a passo. (Predefinição 2m)" />

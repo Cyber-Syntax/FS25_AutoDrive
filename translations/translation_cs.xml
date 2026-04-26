@@ -61,6 +61,8 @@
 		<text name="input_ADToggleAutomaticPickupTarget"				text="AD: 切换自动拾取目标" />
 		<text name="input_ADToggleAutomaticUnloadTarget"				text="AD: 切换自动卸载目标" />
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: 按填充级别切换装载" />
+		<text name="input_ADCopySettings"								text="AD: Copy settings" />
+		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
 		<text name="hud_avoidFruit"									text="AD: 规避作物" />
 		<text name="hud_startHelper"									text="AD: 在目的地开始 AI/CP" />
 		<text name="AD_parkVehicle_noPosSet"							text="未指定停车目的地。" />
@@ -91,6 +93,9 @@
 		<text name="AD_lctrl_for_creation"								text="左CTRL 创建" />
 		<text name="AD_lalt_for_deletion"								text="左ALT 删除" />
 		<text name="AD_lshift_for_reverse"								text="右SHIFT 倒车" />
+		<text name="AD_settings_copied"								text="Settings copied" />
+		<text name="AD_settings_pasted"								text="Settings pasted" />
+		<text name="AD_settings_clipboard_empty"						text="Copy settings first!" />
 		<text name="gui_ad_Setting"									text="AutoDrive - 设置" />
 		<text name="gui_ad_collisionHeigth"							text="地面碰撞高度" />
 		<text name="gui_ad_collisionHeigth_tooltip"					text="设置车辆前方的碰撞检测。 如果在行驶过程中没有检测到其他车辆，则逐步减少。 (默认 2m)" />

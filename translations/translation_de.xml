@@ -61,6 +61,8 @@
 		<text name="input_ADToggleAutomaticPickupTarget"				text="AD: Automatisches Ladeziel umschalten" />
 		<text name="input_ADToggleAutomaticUnloadTarget"				text="AD: Automatisches Entladeziel umschalten" />
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: Beladung nach Füllstand umschalten" />
+		<text name="input_ADCopySettings"								text="AD: Einstellungen kopieren" />
+		<text name="input_ADPasteSettings"								text="AD: Einstellungen einfügen" />
 		<text name="hud_avoidFruit"									text="AD: Fruchtumfahrung" />
 		<text name="hud_startHelper"									text="AD: Starte AI/CP Fahrer am Zielpunkt" />
 		<text name="AD_parkVehicle_noPosSet"							text="Kein Parkplatz zugewiesen." />
@@ -91,6 +93,9 @@
 		<text name="AD_lctrl_for_creation"								text="LSTRG zum Erstellen" />
 		<text name="AD_lalt_for_deletion"								text="LALT zum Löschen" />
 		<text name="AD_lshift_for_reverse"								text="RUMSCH rückwärts fahren" />
+		<text name="AD_settings_copied"								text="Einstellungen kopiert" />
+		<text name="AD_settings_pasted"								text="Einstellungen eingefügt" />
+		<text name="AD_settings_clipboard_empty"						text="Einstellungen erst kopieren!" />
 		<text name="gui_ad_Setting"									text="AutoDrive - Einstellungen" />
 		<text name="gui_ad_collisionHeigth"							text="Kollisionshöhe über Boden" />
 		<text name="gui_ad_collisionHeigth_tooltip"					text="Einstellung der Kollisionserkennung vor dem Fahrzeug. Wenn andere Fahrzeuge während des Fahrens nicht erkannt werden, verringern. (Standard: 2m)" />

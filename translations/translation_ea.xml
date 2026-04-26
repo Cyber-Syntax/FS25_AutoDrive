@@ -61,6 +61,8 @@
 		<text name="input_ADToggleAutomaticPickupTarget"				text="AD: Cambiar a carga automática en destino" />
 		<text name="input_ADToggleAutomaticUnloadTarget"				text="AD: Cambiar a descarga automática en destino" />
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: Alternar carga por nivel de llenado" />
+		<text name="input_ADCopySettings"								text="AD: Copy settings" />
+		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
 		<text name="hud_avoidFruit"									text="AD: Evitar destruir cosechas" />
 		<text name="hud_startHelper"									text="AD: Iniciar AI/CP en destino" />
 		<text name="AD_parkVehicle_noPosSet"							text="No se ha asignado ningún destino de estacionamiento. Asigna el destino seleccionado actualmente haciendo clic derecho." />
@@ -91,6 +93,9 @@
 		<text name="AD_lctrl_for_creation"								text="LCTRL para crear" />
 		<text name="AD_lalt_for_deletion"								text="LALT para borrar" />
 		<text name="AD_lshift_for_reverse"								text="RSHIFT marcha atrás" />
+		<text name="AD_settings_copied"								text="Settings copied" />
+		<text name="AD_settings_pasted"								text="Settings pasted" />
+		<text name="AD_settings_clipboard_empty"						text="Copy settings first!" />
 		<text name="gui_ad_Setting"									text="Configuración - AutoDrive" />
 		<text name="gui_ad_collisionHeigth"							text="Altura de colisión sobre el suelo" />
 		<text name="gui_ad_collisionHeigth_tooltip"					text="Configuración para la detección de colisiones delante del vehículo. Si no se detectan otros vehículos durante la conducción, reduce poco a poco. (Por defecto 2m)." />

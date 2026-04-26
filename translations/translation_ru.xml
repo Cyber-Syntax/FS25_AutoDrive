@@ -61,6 +61,8 @@
 		<text name="input_ADToggleAutomaticPickupTarget"				text="AD: Переключать автоматически цели загрузки" />
 		<text name="input_ADToggleAutomaticUnloadTarget"				text="AD: Переключать автоматически цели разгрузки" />
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: Переключение загрузки по уровню заполнения" />
+		<text name="input_ADCopySettings"								text="AD: Copy settings" />
+		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
 		<text name="hud_avoidFruit"									text="AD: Избегать посевов" />
 		<text name="hud_startHelper"									text="AD: Запустить AI/CP в пункте назначения" />
 		<text name="AD_parkVehicle_noPosSet"							text="Место для парковки не назначено. Чтобы назначить выбранную локацию, как место парковки, нажмите правой кнопкой мыши на этой же кнопке." />
@@ -91,6 +93,9 @@
 		<text name="AD_lctrl_for_creation"								text="L-CTRL создать" />
 		<text name="AD_lalt_for_deletion"								text="L-ALT удалить" />
 		<text name="AD_lshift_for_reverse"								text="R-SHIFT движение ЗХ" />
+		<text name="AD_settings_copied"								text="Settings copied" />
+		<text name="AD_settings_pasted"								text="Settings pasted" />
+		<text name="AD_settings_clipboard_empty"						text="Copy settings first!" />
 		<text name="gui_ad_Setting"									text="AutoDrive - Настройки" />
 		<text name="gui_ad_collisionHeigth"							text="Высота преград над землёй" />
 		<text name="gui_ad_collisionHeigth_tooltip"					text="Настройка для обнаружения столкновений/преград перед автомобилем. Если во время движения другие транспортные средства не обнаруживаются, постепенно уменьшайте параметр. (По умолчанию 2 м)" />

@@ -61,6 +61,8 @@
 		<text name="input_ADToggleAutomaticPickupTarget"				text="AD: Přepnout cíl automatického vyzvednutí" />
 		<text name="input_ADToggleAutomaticUnloadTarget"				text="AD: Přepnout cíl automatického vyložení" />
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: Přepnout načítání podle úrovně naplnění" />
+		<text name="input_ADCopySettings"								text="AD: Copy settings" />
+		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
 		<text name="hud_avoidFruit"									text="AD: Nevjíždět do porostu" />
 		<text name="hud_startHelper"									text="AD: Start AI/CP v místě určení" />
 		<text name="AD_parkVehicle_noPosSet"							text="Vozidlo nemá parkoviště. Vyberte cíl a stiskněte pravé tlačítko myši." />
@@ -91,6 +93,9 @@
 		<text name="AD_lctrl_for_creation"								text="LCTRL vytvořit" />
 		<text name="AD_lalt_for_deletion"								text="LALT smazat" />
 		<text name="AD_lshift_for_reverse"								text="RSHIFT zpětný chod" />
+		<text name="AD_settings_copied"								text="Settings copied" />
+		<text name="AD_settings_pasted"								text="Settings pasted" />
+		<text name="AD_settings_clipboard_empty"						text="Copy settings first!" />
 		<text name="gui_ad_Setting"									text="AutoDrive - Nastavení" />
 		<text name="gui_ad_collisionHeigth"							text="Kolizní výška nad zemí" />
 		<text name="gui_ad_collisionHeigth_tooltip"					text="Nastavení pro detekci kolizí před vozidlem. Pokud během jízdy nejsou detekována jiná vozidla, snižte krok za krokem. (Výchozí 2 m)" />
