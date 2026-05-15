@@ -63,6 +63,7 @@
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: Attiva/disattiva il caricamento in base al livello di riempimento" />
 		<text name="input_ADCopySettings"								text="AD: Copy settings" />
 		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
+		<text name="input_ADCreateFieldPoints"							text="AD: Create Field Points" />
 		<text name="hud_avoidFruit"									text="AD: Evita raccolto" />
 		<text name="hud_startHelper"									text="AD: Avvia IA/CP a destinazione" />
 		<text name="AD_parkVehicle_noPosSet"							text="Nessuna destinazione di parcheggio assegnata." />

@@ -63,6 +63,7 @@
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: Toggle loading by fill level" />
 		<text name="input_ADCopySettings"								text="AD: Copy settings" />
 		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
+		<text name="input_ADCreateFieldPoints"							text="AD: Create Field Points" />
 		<text name="hud_avoidFruit"									text="AD: Meyvelerden kaçının" />
 		<text name="hud_startHelper"									text="AD: AI/CP'ı varış noktasında başlatın" />
 		<text name="AD_parkVehicle_noPosSet"							text="Park yeri atanmadı. Lütfen halihazırda seçili olan hedefi sağ fare tuşu ile atayın." />

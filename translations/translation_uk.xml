@@ -63,6 +63,7 @@
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: Перемикання завантаження по рівня заповнення" />
 		<text name="input_ADCopySettings"								text="AD: Copy settings" />
 		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
+		<text name="input_ADCreateFieldPoints"							text="AD: Create Field Points" />
 		<text name="hud_avoidFruit"									text="AD: Уникати посівів" />
 		<text name="hud_startHelper"									text="AD: Запустити AI/CP в пункті призначення" />
 		<text name="AD_parkVehicle_noPosSet"							text="Місце для паркування не назначено. Щоб назначити вибрану локацію, як місце паркування, нажміть правою кнопкою миші на цій же кнопці." />

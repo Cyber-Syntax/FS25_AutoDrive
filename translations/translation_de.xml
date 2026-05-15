@@ -63,6 +63,7 @@
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: Beladung nach Füllstand umschalten" />
 		<text name="input_ADCopySettings"								text="AD: Einstellungen kopieren" />
 		<text name="input_ADPasteSettings"								text="AD: Einstellungen einfügen" />
+		<text name="input_ADCreateFieldPoints"							text="AD: Feldrand Punkte generieren" />
 		<text name="hud_avoidFruit"									text="AD: Fruchtumfahrung" />
 		<text name="hud_startHelper"									text="AD: Starte AI/CP Fahrer am Zielpunkt" />
 		<text name="AD_parkVehicle_noPosSet"							text="Kein Parkplatz zugewiesen." />

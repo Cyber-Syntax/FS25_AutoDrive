@@ -63,6 +63,7 @@
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: 按填充级别切换装载" />
 		<text name="input_ADCopySettings"								text="AD: Copy settings" />
 		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
+		<text name="input_ADCreateFieldPoints"							text="AD: Create Field Points" />
 		<text name="hud_avoidFruit"									text="AD: 规避作物" />
 		<text name="hud_startHelper"									text="AD: 在目的地开始 AI/CP" />
 		<text name="AD_parkVehicle_noPosSet"							text="未指定停车目的地。" />

@@ -63,6 +63,7 @@
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: Toggle loading by fill level" />
 		<text name="input_ADCopySettings"								text="AD: Copy settings" />
 		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
+		<text name="input_ADCreateFieldPoints"							text="AD: Create Field Points" />
 		<text name="hud_avoidFruit"									text="AD: Éviter les cultures" />
 		<text name="hud_startHelper"									text="AD: Démarrer AI/CP à la destination" />
 		<text name="AD_parkVehicle_noPosSet"							text="Pas de parking attribué. Veuillez sélectionner la (Destination actuelle) et corriger avec le clic droit de souris sur le 'P' HUD." />

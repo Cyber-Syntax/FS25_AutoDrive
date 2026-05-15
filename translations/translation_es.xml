@@ -63,6 +63,7 @@
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: Alternar carga por nivel de llenado" />
 		<text name="input_ADCopySettings"								text="AD: Copy settings" />
 		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
+		<text name="input_ADCreateFieldPoints"							text="AD: Create Field Points" />
 		<text name="hud_avoidFruit"									text="AD: Evitar destruir cosechas" />
 		<text name="hud_startHelper"									text="AD: Iniciar AI/CP en destino" />
 		<text name="AD_parkVehicle_noPosSet"							text="No se ha asignado ningún destino de estacionamiento. Asigna el destino seleccionado actualmente haciendo clic derecho." />

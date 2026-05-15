@@ -63,6 +63,7 @@
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: Přepnout načítání podle úrovně naplnění" />
 		<text name="input_ADCopySettings"								text="AD: Copy settings" />
 		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
+		<text name="input_ADCreateFieldPoints"							text="AD: Create Field Points" />
 		<text name="hud_avoidFruit"									text="AD: Nevjíždět do porostu" />
 		<text name="hud_startHelper"									text="AD: Start AI/CP v místě určení" />
 		<text name="AD_parkVehicle_noPosSet"							text="Vozidlo nemá parkoviště. Vyberte cíl a stiskněte pravé tlačítko myši." />

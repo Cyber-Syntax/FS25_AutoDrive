@@ -63,6 +63,7 @@
 		<text name="input_ADToggleLoadByFillLevel"						text="AD: Skift pålæsning efter fyldnings niveau" />
 		<text name="input_ADCopySettings"								text="AD: Copy settings" />
 		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
+		<text name="input_ADCreateFieldPoints"							text="AD: Create Field Points" />
 		<text name="hud_avoidFruit"									text="AD: Undgå afgrøder" />
 		<text name="hud_startHelper"									text="AD: Start AI/CP ved destinationen" />
 		<text name="AD_parkVehicle_noPosSet"							text="Ingen parkerings destination tildelt. Tildel det aktuelt valgte mål med højre museknap." />
