@@ -448,28 +448,28 @@ function FieldPointGenerator:removeWrongFieldGeneratorWayPoints(wayPoints)
             wp_previous = wayPoints[#wayPoints]
         end
         local wp_current = wayPoints[i]
-        if wp_current == nil then
-        end
         local wp_ahead = wayPoints[i+1]
         if wp_ahead == nil then
             wp_ahead = wayPoints[1]
         end
-        local angle =
-                math.abs(
-                AutoDrive.angleBetween(
-                    {x = wp_ahead.x - wp_current.x, z = wp_ahead.z - wp_current.z},
-                    {x = wp_current.x - wp_previous.x, z = wp_current.z - wp_previous.z}
+        if wp_current ~= nil then
+            local angle =
+                    math.abs(
+                    AutoDrive.angleBetween(
+                        {x = wp_ahead.x - wp_current.x, z = wp_ahead.z - wp_current.z},
+                        {x = wp_current.x - wp_previous.x, z = wp_current.z - wp_previous.z}
+                    )
                 )
-            )
-        if angle > 80 then
-            -- start again
-            foundWrong = true
-            i = 1
+            if angle > 80 then
+                -- start again
+                foundWrong = true
+                i = 1
 
-            local ret
-            ret = table.removeValue(wayPoints, wp_current)
+                local ret
+                ret = table.removeValue(wayPoints, wp_current)
+            end
+            i = i + 1
         end
-        i = i + 1
     end
 end
 
