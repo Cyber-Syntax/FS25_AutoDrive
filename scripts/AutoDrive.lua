@@ -534,6 +534,17 @@ function AutoDrive:init()
 		AutoDrive.selectedWayPointSample = createSample("AutoDrive_selectedWayPoint")
 		loadSample(AutoDrive.selectedWayPointSample, fileName, false)
 	end
+    -- collect swath fillTypes
+    AutoDrive.windrowCutFillTypes = {}
+    AutoDrive.windrowFillTypes = {}
+    for fruitTypeIndex, fruitType in pairs(g_fruitTypeManager:getFruitTypes()) do
+        if fruitType.windrowCutFillType ~= nil then
+            AutoDrive.windrowCutFillTypes[fruitTypeIndex] = fruitType.windrowCutFillType.index
+        end
+        if fruitType.windrowFillType ~= nil then
+            AutoDrive.windrowFillTypes[fruitTypeIndex] = fruitType.windrowFillType.index
+        end
+    end
 	AutoDrivePlaceableData:setActive(true)
 	AutoDrive:setValidSupportedFillTypesForAllVehicles()
 	AutoDrive:autostartHelpers()
