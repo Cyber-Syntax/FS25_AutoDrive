@@ -9,6 +9,7 @@ isVehicleSpecific - this setting is specific for the current vehicle only
 isUserSpecific - this setting is specific for the current user only
 if isVehicleSpecific is false or nil and isUserSpecific is false or nil the setting is global
 shallNotBeSaved - this setting is only valid during runtime and will not be saved
+isCopyPaste - this setting could be copy and paste from one vehicle to another
 ]]
 
 AutoDrive.settings = {}
@@ -286,7 +287,8 @@ AutoDrive.settings.pipeOffset = {
     text = "gui_ad_pipe_offset",
     tooltip = "gui_ad_pipe_offset_tooltip",
     translate = false,
-    isVehicleSpecific = true
+    isVehicleSpecific = true,
+    isCopyPaste = true
 }
 
 AutoDrive.settings.followDistance = {
@@ -365,7 +367,8 @@ AutoDrive.settings.followDistance = {
     text = "gui_ad_followDistance",
     tooltip = "gui_ad_followDistance_tooltip",
     translate = false,
-    isVehicleSpecific = true
+    isVehicleSpecific = true,
+    isCopyPaste = true
 }
 
 AutoDrive.settings.lookAheadTurning = {
@@ -431,7 +434,8 @@ AutoDrive.settings.parkInField = {
     text = "gui_ad_parkInField",
     tooltip = "gui_ad_parkInField_tooltip",
     translate = true,
-    isVehicleSpecific = true
+    isVehicleSpecific = true,
+    isCopyPaste = true
 }
 
 AutoDrive.settings.unloadFillLevel = {
@@ -442,7 +446,8 @@ AutoDrive.settings.unloadFillLevel = {
     text = "gui_ad_unloadFillLevel",
     tooltip = "gui_ad_unloadFillLevel_tooltip",
     translate = false,
-    isVehicleSpecific = true
+    isVehicleSpecific = true,
+    isCopyPaste = true
 }
 
 AutoDrive.settings.findDriver = {
@@ -523,7 +528,8 @@ AutoDrive.settings.exitField = {
     text = "gui_ad_exitField",
     tooltip = "gui_ad_exitField_tooltip",
     translate = true,
-    isVehicleSpecific = true
+    isVehicleSpecific = true,
+    isCopyPaste = true
 }
 
 AutoDrive.settings.showHelp = {
@@ -569,7 +575,8 @@ AutoDrive.settings.avoidFruit = {
     text = "gui_ad_avoidFruit",
     tooltip = "gui_ad_avoidFruit_tooltip",
     translate = true,
-    isVehicleSpecific = true
+    isVehicleSpecific = true,
+    isCopyPaste = true
 }
 
 AutoDrive.settings.pathFinderTime = {
@@ -752,7 +759,8 @@ AutoDrive.settings.preCallLevel = {
     text = "gui_ad_preCallLevel",
     tooltip = "gui_ad_preCallLevel_tooltip",
     translate = false,
-    isVehicleSpecific = true
+    isVehicleSpecific = true,
+    isCopyPaste = true
 }
 
 AutoDrive.settings.chaseSide = {
@@ -763,7 +771,8 @@ AutoDrive.settings.chaseSide = {
     text = "gui_ad_chaseSide",
     tooltip = "gui_ad_chaseSide_tooltip",
     translate = true,
-    isVehicleSpecific = true
+    isVehicleSpecific = true,
+    isCopyPaste = true
 }
 
 AutoDrive.settings.rotateTargets = {
@@ -774,7 +783,8 @@ AutoDrive.settings.rotateTargets = {
     text = "gui_ad_rotateTargets",
     tooltip = "gui_ad_rotateTargets_tooltip",
     translate = true,
-    isVehicleSpecific = true
+    isVehicleSpecific = true,
+    isCopyPaste = true
 }
 
 AutoDrive.settings.maxTriggerDistance = {
@@ -820,7 +830,8 @@ AutoDrive.settings.activeUnloading = {
     text = "gui_ad_activeUnloading",
     tooltip = "gui_ad_activeUnloading_tooltip",
     translate = true,
-    isVehicleSpecific = true
+    isVehicleSpecific = true,
+    isCopyPaste = true
 }
 
 AutoDrive.settings.restrictToField = {
@@ -831,7 +842,8 @@ AutoDrive.settings.restrictToField = {
     text = "gui_ad_restrictToField",
     tooltip = "gui_ad_restrictToField_tooltip",
     translate = true,
-    isVehicleSpecific = true
+    isVehicleSpecific = true,
+    isCopyPaste = true
 }
 
 AutoDrive.settings.showTooltips = {
@@ -911,7 +923,8 @@ AutoDrive.settings.callSecondUnloader = {
     text = "gui_ad_callSecondUnloader",
     tooltip = "gui_ad_callSecondUnloader_tooltip",
     translate = true,
-    isVehicleSpecific = true
+    isVehicleSpecific = true,
+    isCopyPaste = true
 }
 
 AutoDrive.settings.followOnlyOnField = {
@@ -922,7 +935,8 @@ AutoDrive.settings.followOnlyOnField = {
     text = "gui_ad_followOnlyOnField",
     tooltip = "gui_ad_followOnlyOnField_tooltip",
     translate = true,
-    isVehicleSpecific = true
+    isVehicleSpecific = true,
+    isCopyPaste = true
 }
 
 AutoDrive.settings.addSettingsToHUD = {
@@ -1178,8 +1192,9 @@ AutoDrive.settings.detectSwath = {
     text = "gui_ad_detectSwath",
     tooltip = "gui_ad_detectSwath_tooltip",
     translate = true,
+    isUserSpecific = false,
     isVehicleSpecific = true,
-    isUserSpecific = false
+    isCopyPaste = true
 }
 
 AutoDrive.settings.colorAssignmentMode = {
@@ -1729,6 +1744,152 @@ AutoDrive.settings.RecordOppositeDriveDirectionOffset = {
     isVehicleSpecific = false
 }
 
+AutoDrive.settings.fieldPointOffset = {
+    values = {
+        -6.0,
+        -5.8,
+        -5.6,
+        -5.4,
+        -5.2,
+        -5.0,
+        -4.8,
+        -4.6,
+        -4.4,
+        -4.2,
+        -4.0,
+        -3.8,
+        -3.6,
+        -3.4,
+        -3.2,
+        -3.0,
+        -2.8,
+        -2.6,
+        -2.4,
+        -2.2,
+        -2.0,
+        -1.8,
+        -1.6,
+        -1.4,
+        -1.2,
+        -1.0,
+        -0.8,
+        -0.6,
+        -0.4,
+        -0.2,
+        0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3.0,
+        3.2,
+        3.4,
+        3.6,
+        3.8,
+        4.0,
+        4.2,
+        4.4,
+        4.6,
+        4.8,
+        5.0,
+        5.2,
+        5.4,
+        5.6,
+        5.8,
+        6.0
+    },
+    texts = {
+		"-6.0 m",
+        "-5.8 m",
+        "-5.6 m",
+        "-5.4 m",
+        "-5.2 m",
+        "-5.0 m",
+        "-4.8 m",
+        "-4.6 m",
+        "-4.4 m",
+        "-4.2 m",
+        "-4.0 m",
+        "-3.8 m",
+        "-3.6 m",
+        "-3.4 m",
+        "-3.2 m",
+        "-3.0 m",
+        "-2.8 m",
+        "-2.6 m",
+        "-2.4 m",
+        "-2.2 m",
+        "-2.0 m",
+        "-1.8 m",
+        "-1.6 m",
+        "-1.4 m",
+        "-1.2 m",
+        "-1.0 m",
+        "-0.8 m",
+        "-0.6 m",
+        "-0.4 m",
+        "-0.2 m",
+        "0 m",
+        "0.2 m",
+        "0.4 m",
+        "0.6 m",
+        "0.8 m",
+        "1.0 m",
+        "1.2 m",
+        "1.4 m",
+        "1.6 m",
+        "1.8 m",
+        "2.0 m",
+        "2.2 m",
+        "2.4 m",
+        "2.6 m",
+        "2.8 m",
+        "3.0 m",
+        "3.2 m",
+        "3.4 m",
+        "3.6 m",
+        "3.8 m",
+        "4.0 m",
+        "4.2 m",
+        "4.4 m",
+        "4.6 m",
+        "4.8 m",
+        "5.0 m",
+        "5.2 m",
+        "5.4 m",
+        "5.6 m",
+        "5.8 m",
+        "6.0 m"
+    },
+    default = 31,
+    current = 31,
+    text = "gui_ad_fieldPointOffset",
+    tooltip = "gui_ad_fieldPointOffset_tooltip",
+    translate = true,
+    isVehicleSpecific = false
+}
+
+AutoDrive.settings.maxFieldPointDistance = {
+    values = {2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 25},
+    texts = {"2 m", "3 m", "4 m", "5 m", "6 m", "8 m", "10 m", "12 m", "15 m", "20 m", "25 m"},
+    default = 6,
+    current = 6,
+    text = "gui_ad_maxFieldPointDistance",
+    tooltip = "gui_ad_maxFieldPointDistance_tooltip",
+    translate = true,
+    isVehicleSpecific = false
+}
+
 function AutoDrive.getSetting(settingName, vehicle)
     if AutoDrive.settings[settingName] ~= nil then
         local setting = AutoDrive.settings[settingName]
@@ -1830,6 +1991,7 @@ function AutoDrive.readVehicleSettingsFromXML(vehicle, xmlFile, key)
             settingVehicle.values = setting.values
             settingVehicle.default = setting.default
             settingVehicle.userDefault = setting.userDefault
+            settingVehicle.isCopyPaste = setting.isCopyPaste
             if setting.userDefault ~= nil then
                 settingVehicle.current = setting.userDefault
             else

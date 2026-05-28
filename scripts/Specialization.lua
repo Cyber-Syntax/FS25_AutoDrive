@@ -56,6 +56,7 @@ function AutoDrive.registerOverwrittenFunctions(vehicleType)
     SpecializationUtil.registerOverwrittenFunction(vehicleType, "getIsAIActive",                        AutoDrive.getIsAIActive)
     SpecializationUtil.registerOverwrittenFunction(vehicleType, "getIsVehicleControlledByPlayer",       AutoDrive.getIsVehicleControlledByPlayer)
     SpecializationUtil.registerOverwrittenFunction(vehicleType, "getActiveFarm",                        AutoDrive.getActiveFarm)
+    SpecializationUtil.registerOverwrittenFunction(vehicleType, "setBroken",                            AutoDrive.setBroken)
 
     -- Disables click to switch, if the user clicks on the hud or the editor mode is active.
     -- see ExternalInterface.lua
@@ -1249,7 +1250,7 @@ function AutoDrive:stopAutoDrive()
                     if self.spec_locomotive then
                         if self.setCruiseControlState then
                             self:setCruiseControlState(Drivable.CRUISECONTROL_STATE_OFF)
-                            self:updateVehiclePhysics(0, 0, 0, 16)
+                            self:updateVehiclePhysics(0, 0, true, 16)
                             self:raiseActive()
                         end
                     end
@@ -1787,6 +1788,13 @@ function AutoDrive:getActiveFarm(superFunc)
             -- return farmID only for valid farms, not spectator farm
             return actualFarmID
         end
+    end
+    return superFunc(self)
+end
+
+function AutoDrive:setBroken(superFunc)
+    if self.spec_locomotive then
+        return
     end
     return superFunc(self)
 end

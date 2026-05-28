@@ -958,7 +958,12 @@ function AutoDrive.startFillTrigger(trailers)
                         end
                     end
                 else
-                    AutoDrive.debugPrint(rootVehicle, AutoDrive.DC_TRAILERINFO, "ERROR: AutoDrive.startFillTrigger fillTypes missmatch")
+                    local triggerFillTypeName = g_fillTypeManager:getFillTypeNameByIndex(fillType)
+                    local vehicleFillTypeName = g_fillTypeManager:getFillTypeNameByIndex(rootVehicle.ad.stateModule:getFillType())
+                    AutoDrive.debugPrint(rootVehicle, AutoDrive.DC_TRAILERINFO, "ERROR: AutoDrive.startFillTrigger fillTypes missmatch triggerFillTypeName %s <-> vehicleFillTypeName %s "
+                    , tostring(triggerFillTypeName)
+                    , tostring(vehicleFillTypeName)
+                    )
                 end
             end
         end
@@ -1089,6 +1094,35 @@ function AutoDrive.getValidSupportedFillTypes(vehicle, excludedVehicles)
         end
     end
     return supportedFillTypes
+end
+
+-- return list of fillTypes which are supported to be un-/loaded, additional sowing, sprayer, saltSpreader
+-- only AL fillTypes if present in one implement !
+function AutoDrive.getValidSupportedFillTypesALfirst(vehicle)
+    if vehicle == nil then
+        return {}
+    end
+    local hasAL = false
+    local supportedFillTypes = {}
+    local trailers, trailerCount = AutoDrive.getAllUnits(vehicle)
+    if trailers then
+        for _, trailer in ipairs(trailers) do
+            if AutoDrive:hasAL(trailer) then
+                hasAL = true
+                local alFillTypes = AutoDrive:getALFillTypes(trailer)
+                if alFillTypes ~= nil and #alFillTypes > 0 then
+                    for _, fillType in ipairs(alFillTypes) do
+                        table.insert(supportedFillTypes, fillType.fillTypeID)
+                    end
+                    break
+                end
+            end
+        end
+    end
+    if not hasAL then
+        supportedFillTypes = AutoDrive.getValidSupportedFillTypes(vehicle)
+    end
+    return supportedFillTypes, hasAL
 end
 
 function AutoDrive.setValidSupportedFillType(vehicle, excludedImplementIndex)

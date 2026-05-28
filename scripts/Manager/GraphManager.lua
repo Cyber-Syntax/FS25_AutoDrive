@@ -637,10 +637,10 @@ function ADGraphManager:setConnectionBetween(startNode, endNode, direction, send
     end
 end
 
-function ADGraphManager:createWayPointWithConnections(x, y, z, out, incoming, flags, connect, reverseDirection, dualConnection, sendEvent)
+function ADGraphManager:createWayPointWithConnections(x, y, z, out, incoming, flags, connect, reverseDirection, dualConnection, fieldID, sendEvent)
     if sendEvent == nil or sendEvent == true then
         -- Propagating waypoint creation all over the network
-        AutoDriveCreateWayPointEvent.sendEvent(x, y, z, out, incoming, flags, connect, reverseDirection, dualConnection)
+        AutoDriveCreateWayPointEvent.sendEvent(x, y, z, out, incoming, flags, connect, reverseDirection, dualConnection, fieldID)
     else
         local newId = self:getWayPointsCount() + 1
         local incomingConnect = incoming
@@ -650,7 +650,7 @@ function ADGraphManager:createWayPointWithConnections(x, y, z, out, incoming, fl
             incomingConnect = {}
             outConnect = {}
         end
-        local newWp = self:createNode(newId, x, y, z, outConnect, incomingConnect, flags)
+        local newWp = self:createNode(newId, x, y, z, outConnect, incomingConnect, flags, nil, fieldID)
         self:setWayPoint(newWp)
 
         if connect then
@@ -665,7 +665,7 @@ end
 function ADGraphManager:createWayPointColored(x, y, z, colors)
     local prevId = self:getWayPointsCount()
     local newId = prevId + 1
-    local newWp = self:createNode(newId, x, y, z, {}, {}, 0, colors)
+    local newWp = self:createNode(newId, x, y, z, {}, {}, 0, colors, nil)
     self:setWayPoint(newWp)
     self:markChanges()
 
@@ -726,7 +726,7 @@ function ADGraphManager:recordWayPoint(x, y, z, connectPrevious, dual, isReverse
     end
 
     local newId = self:getWayPointsCount() + 1
-    local newWp = self:createNode(newId, x, y, z, {}, {}, flags)
+    local newWp = self:createNode(newId, x, y, z, {}, {}, flags, nil, nil)
     self:setWayPoint(newWp)
     if connectPrevious then
         self:toggleConnectionBetween(previous, newWp, isReverse, dual, false)
@@ -978,7 +978,7 @@ function ADGraphManager:getWayPointsInRange(point, rangeMin, rangeMax)
     return inRange
 end
 
-function ADGraphManager:createNode(id, x, y, z, out, incoming, flags, colors)
+function ADGraphManager:createNode(id, x, y, z, out, incoming, flags, colors, fieldID)
     return {
         id = id,
         x = x,
@@ -987,7 +987,8 @@ function ADGraphManager:createNode(id, x, y, z, out, incoming, flags, colors)
         out = out,
         incoming = incoming,
         flags = flags,
-        colors = colors
+        colors = colors,
+        fieldID = fieldID
     }
 end
 
@@ -1773,6 +1774,28 @@ function ADGraphManager:deleteColorSelectionWayPoints()
     end
 end
 
+function ADGraphManager:removeFieldWaypoints(fieldID)
+    local network = self:getWayPoints()
+    local pointsToDelete = {}
+    for i, wp in pairs(network) do
+        if bit32.band(wp.flags, AutoDrive.FLAG_FIELD_POINT) > 0 and wp.fieldID == fieldID then
+            table.insert(pointsToDelete, wp.id)
+        end
+    end
+    if #pointsToDelete > 0 then
+        -- sort the wayPoints to delete in descant order to ensure correct linkage deletion
+        local sort_func = function(a, b)
+            return a > b
+        end
+        table.sort(pointsToDelete, sort_func)
+
+        for i = 1, #pointsToDelete do
+            ADGraphManager:removeWayPoint(pointsToDelete[i])
+        end
+    end
+    return #pointsToDelete
+end
+
 function ADGraphManager:removeNodesWithFlag(flagToRemove)
     local network = self:getWayPoints()
     local pointsToDelete = {}
@@ -1810,7 +1833,7 @@ function ADGraphManager:createSplineConnection(start, waypoints, target, dualCon
             if subPrio then
                 flags = AutoDrive.FLAG_SUBPRIO
             end
-            self:createWayPointWithConnections(wp.x, wp.y, wp.z, {}, {}, flags, false, false, false, sendEvent)
+            self:createWayPointWithConnections(wp.x, wp.y, wp.z, {}, {}, flags, false, false, false, nil, sendEvent)
             local createdId = self:getWayPointsCount()
             self:toggleConnectionBetween(
                 ADGraphManager:getWayPointById(lastId),

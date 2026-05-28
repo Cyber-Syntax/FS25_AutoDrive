@@ -27,268 +27,278 @@
         <text name="input_AD_continue"									text="AD: Devam et" />
 		<text name="input_ADSelectTargetUnload"						text="AD: Sonraki Boşaltmayı Seçin" />
 		<text name="input_ADSelectPreviousTargetUnload"				text="AD: Önceki Boşaltmayı Seçin" />
-        <text name="input_ADActivateDebug"								text="AD: Düzenleme Modu" />
-        <text name="input_ADDisplayMapPoints"							text="AD: Koordinatları göster" />
-        <text name="input_ADDebugSelectNeighbor"						text="AD: Komşu Noktayı Seç" />
-        <text name="input_ADDebugChangeNeighbor"						text="AD: Sonraki Komşu Noktayı Seç" />
-        <text name="input_ADDebugPreviousNeighbor"						text="AD: Önceki Komşu Noktayı Seç" />
-        <text name="input_ADDebugCreateConnection"						text="AD: Arasındaki bağlantıyı aç/kapat" />
-        <text name="input_ADDebugToggleConnectionInverted"				text="AD: Arasındaki ters bağlantıyı aç/kapat" />
-        <text name="input_ADDebugCreateMapMarker"						text="AD: Hedef Oluştur/Düzenle" />
-        <text name="input_ADRenameMapMarker"							text="AD: Seçili Hedefi Düzenle" />
-        <text name="input_ADDebugDeleteWayPoint"						text="AD: Ara Noktayı Sil" />
-        <text name="input_ADDebugDeleteDestination"					text="AD: En yakın Hedefi Sil" />
-        <text name="input_ADSelectNextFillType"						text="AD: Sonraki Dolum Türünü Seç" />
-        <text name="input_ADSelectPreviousFillType"					text="AD: Önceki Dolum Türünü Seç" />
-        <text name="input_ADOpenGUI"									text="AD: GUI Aç" />
-        <text name="input_ADCallDriver"								text="AD: Sürücü Çağır" />
-        <text name="input_ADGoToVehicle"								text="AD: Varan araca git" />
-        <text name="input_ADNameDriver"								text="AD: Sürücü adı ata" />
-        <text name="input_ADSetDestinationFilter"						text="AD: Hedef filtresi" />
-        <text name="input_AD_FieldSpeed_up"							text="AD: Tarla Hızını Artır" />
-        <text name="input_AD_FieldSpeed_down"							text="AD: Tarla Hızını Azalt" />
-        <text name="input_ADIncLoopCounter"							text="AD: Döngü sayacını artır" />
-        <text name="input_ADDecLoopCounter"							text="AD: Döngü sayacını azalt" />
-        <text name="input_ADbunkerUnloadType"							text="AD: Römork veya BGA'ya Boşalt" />
-        <text name="input_ADParkVehicle"								text="AD: Aracı park et" />
-        <text name="input_ADSetParkDestination"						text="AD: Park için 1. Hedefi ata" />
-        <text name="input_ADRefuelVehicle"								text="AD: Araca yakıt al" />
-        <text name="input_ADRepairVehicle"								text="AD: Aracı tamir et" />
-        <text name="input_ADSwapTargets"								text="AD: Hedefleri değiştir" />
-        <text name="input_ADStartHelper"								text="AD: Yapay Zeka/CP'ye Devret" />
-        <text name="input_ADToggleUsedHelper"							text="AD: Yapay Zeka/CP Arasında Geçiş Yap" />
-        <text name="input_AD_devAction"								text="AD: Geliştirici Eylemi" />
-        <text name="input_ADToggleAutomaticPickupTarget"				text="AD: Otomatik alım hedefini aç/kapat" />
-        <text name="input_ADToggleAutomaticUnloadTarget"				text="AD: Otomatik boşaltma hedefini aç/kapat" />
-        <text name="input_ADToggleLoadByFillLevel"						text="AD: Doluluk seviyesine göre yüklemeyi aç/kapat" />
-        <text name="hud_avoidFruit"									text="AD: Ekinden kaçın" />
-        <text name="hud_startHelper"									text="AD: Hedefte Yapay Zeka/CP başlat" />
-        <text name="AD_parkVehicle_noPosSet"							text="Park hedefi atanmadı." />
-        <text name="AD_parkVehicle_selected"							text="Seçilen park hedefi: " />
-        <text name="AD_parkVehicle_deleted"							text="Park hedefi silindi!" />
-        <text name="AD_Driver_of"										text="Aracın sürücüsü" />
-        <text name="AD_has_reached"									text="ulaştı" />
-        <text name="AD_got_stuck"										text="sıkıştı" />
-        <text name="AD_cannot_reach"									text="ulaşamadı" />
-        <text name="AD_cannot_find_path"								text="rota hesaplanamıyor" />
-        <text name="AD_new_marker"										text="Yeni Hedef:" />
-        <text name="AD_No_Trailer"										text="römork bulunamadı" />
-        <text name="AD_No_Bunker"										text="silo deposu bulunamadı" />
-        <text name="AD_No_Shovel"										text="bağlı bir kepçe bulunamadı" />
-        <text name="AD_No_Refuel_Station"								text="yakıt istasyonu bulunamadı" />
-        <text name="AD_No_Repair_Station"								text="şunun için tamir istasyonu bulunamadı:" />
-        <text name="AD_Wrong_Mode_takeover_from_CP"					text="CP ile birlikte çalışmak için yanlış AD Modu" />
-        <text name="AD_Unable_to_start_AIJob"							text="Yapay Zeka Yardımcısı başlatılamıyor" />
-        <text name="AD_AIJob_active"									text="Yapay Zeka Yardımcısı hala aktif!" />
-        <text name="AD_MODE_DRIVETO"									text="Sür" />
-        <text name="AD_MODE_DELIVERTO"									text="Teslim Et" />
-        <text name="AD_MODE_PICKUPANDDELIVER"							text="Al ve Teslim Et" />
-        <text name="AD_MODE_UNLOAD"									text="Biçerdöveri Boşalt" />
-        <text name="AD_MODE_LOAD"										text="Yükle" />
+		<text name="input_ADActivateDebug"								text="AD: Düzenleme Modu" />
+		<text name="input_ADDisplayMapPoints"							text="AD: Show waypoints" />
+		<text name="input_ADDebugSelectNeighbor"						text="AD: Komşu Noktayı Seçin" />
+		<text name="input_ADDebugChangeNeighbor"						text="AD: Sonraki Komşu Noktasını Seçin" />
+		<text name="input_ADDebugPreviousNeighbor"						text="AD: Select previous Neighbour Point" />
+		<text name="input_ADDebugCreateConnection"						text="AD: Bağlantıyı değiştir." />
+		<text name="input_ADDebugToggleConnectionInverted"				text="AD: Toggle connection between inverted" />
+		<text name="input_ADDebugCreateMapMarker"						text="AD: Hedef Ekle / Düzenle" />
+		<text name="input_ADRenameMapMarker"							text="AD: Seçili Hedefi düzenleyin" />
+		<text name="input_ADDebugDeleteWayPoint"						text="AD: Ara Noktayı Sil" />
+		<text name="input_ADDebugDeleteDestination"					text="AD: En yakın Hedefi Sil" />
+		<text name="input_ADSelectNextFillType"						text="AD: Sonraki Dolum Türünü Seçin" />
+		<text name="input_ADSelectPreviousFillType"					text="AD: Önceki Dolum Türünü Seçin" />
+		<text name="input_ADOpenGUI"									text="AD: GUI'yi aç" />
+		<text name="input_ADCallDriver"								text="AD: Sürücüyü Arayın" />
+		<text name="input_ADGoToVehicle"								text="AD: Gelen araca git" />
+		<text name="input_ADNameDriver"								text="AD: Sürücü adını atayın" />
+		<text name="input_ADSetDestinationFilter"						text="AD: Destination filter" />
+		<text name="input_AD_FieldSpeed_up"							text="AD: Increase Field Speed" />
+		<text name="input_AD_FieldSpeed_down"							text="AD: Decrease Field Speed" />
+		<text name="input_ADIncLoopCounter"							text="AD: Döngü sayacını artırın" />
+		<text name="input_ADDecLoopCounter"							text="AD: Decrease loop counter" />
+		<text name="input_ADbunkerUnloadType"							text="AD: Unload to Trailer or BGA" />
+		<text name="input_ADParkVehicle"								text="AD: Aracı park et" />
+		<text name="input_ADSetParkDestination"						text="AD: assign 1st Destination for parking" />
+		<text name="input_ADRefuelVehicle"								text="AD: Refuel vehicle" />
+		<text name="input_ADRepairVehicle"								text="AD: Repair vehicle" />
+		<text name="input_ADSwapTargets"								text="AD: Hedefleri değiştir" />
+		<text name="input_ADStartHelper"								text="AD: Pass to AI/CP" />
+		<text name="input_ADToggleUsedHelper"							text="AD: Toggle AI/CP" />
+		<text name="input_AD_devAction"								text="AD: Developer Action" />
+		<text name="input_ADToggleAutomaticPickupTarget"				text="AD: Toggle automatic pickup target" />
+		<text name="input_ADToggleAutomaticUnloadTarget"				text="AD: Toggle automatic unload target" />
+		<text name="input_ADToggleLoadByFillLevel"						text="AD: Toggle loading by fill level" />
+		<text name="input_ADCopySettings"								text="AD: Copy settings" />
+		<text name="input_ADPasteSettings"								text="AD: Paste settings" />
+		<text name="input_ADCreateFieldPoints"							text="AD: Create Field Points" />
+		<text name="hud_avoidFruit"									text="AD: Meyvelerden kaçının" />
+		<text name="hud_startHelper"									text="AD: AI/CP'ı varış noktasında başlatın" />
+		<text name="AD_parkVehicle_noPosSet"							text="Park yeri atanmadı. Lütfen halihazırda seçili olan hedefi sağ fare tuşu ile atayın." />
+		<text name="AD_parkVehicle_selected"							text="Seçilen park yeri:" />
+		<text name="AD_parkVehicle_deleted"							text="parking destination deleted!" />
+		<text name="AD_Driver_of"										text="Sürücüsü" />
+		<text name="AD_has_reached"									text="ulaştı" />
+		<text name="AD_got_stuck"										text="sıkışmak" />
+		<text name="AD_cannot_reach"									text="ulaşamıyorum" />
+		<text name="AD_cannot_find_path"								text="yolu hesaplayamıyorum" />
+		<text name="AD_new_marker"										text="Yeni hedef:" />
+		<text name="AD_No_Trailer"										text="dorse bulamadım" />
+		<text name="AD_No_Bunker"										text="Bunker silosu bulamadı" />
+		<text name="AD_No_Shovel"										text="bağlı bir kürek bulamadım" />
+		<text name="AD_No_Refuel_Station"								text="could not find refuel station" />
+		<text name="AD_No_Repair_Station"								text="could not find repair station for:" />
+		<text name="AD_Wrong_Mode_takeover_from_CP"					text="Wrong AD Mode to work together with CP" />
+		<text name="AD_Unable_to_start_AIJob"							text="Not able to start AI Helper" />
+		<text name="AD_AIJob_active"									text="AI Helper still active!" />
+		<text name="AD_MODE_DRIVETO"									text="Sürüş" />
+		<text name="AD_MODE_DELIVERTO"									text="Teslim etmek" />
+		<text name="AD_MODE_PICKUPANDDELIVER"							text="Toplama ve Teslim Etme" />
+		<text name="AD_MODE_UNLOAD"									text="Birleştirmeyi (Biçerdöveri) Kaldır" />
+		<text name="AD_MODE_LOAD"										text="Yükle" />
 		<text name="AD_MODE_BGA"										text="Bunker silosunu boşaltın" />
 		<text name="AD_synchronizing"									text="sunucudan ağ yükleniyor .." />
 		<text name="AD_lctrl_for_extendedEditor"						text="Genişletilmiş düzenleyici modu için LCTRL" />
 		<text name="AD_lctrl_for_creation"								text="Oluşturmak için LCTRL" />
 		<text name="AD_lalt_for_deletion"								text="Silmek için LALT" />
 		<text name="AD_lshift_for_reverse"								text="RSHIFT geri sürüşü" />
-        <text name="gui_ad_Setting"									text="AutoDrive - Ayarlar" />
-        <text name="gui_ad_collisionHeigth"							text="Zeminden Çarpışma Yüksekliği" />
-        <text name="gui_ad_collisionHeigth_tooltip"					text="Aracın önünde çarpışma algılama ayarı. Sürüş sırasında diğer araçlar algılanmıyorsa kademeli olarak azaltın. (Varsayılan 2m)" />
-        <text name="gui_ad_blinkValue"									text="Otomatik Sinyal" />
-        <text name="gui_ad_blinkValue_tooltip"							text="Sinyal lambalarını otomatik etkinleştirmek için direksiyon açısı. (0 = otomatik sinyal kapalı)" />
-        <text name="gui_ad_pipe_offset"								text="Boru Kaydırma" />
-        <text name="gui_ad_pipe_offset_tooltip"						text="Tespit edilen boru konumuna uygulanan ek kaydırma" />
-        <text name="gui_ad_followDistance"								text="Biçerdöver mesafesi" />
-        <text name="gui_ad_followDistance_tooltip"						text="Biçerdöveri arkasından takip ederken korunan mesafe" />
-        <text name="gui_ad_lookahead_turning"							text="İleriye bakma mesafesi (dönüş)" />
-        <text name="gui_ad_lookahead_turning_tooltip"					text="Bir sonraki bölümü izlemek üzere direksiyonu ayarlamak için aracın ileriye baktığı mesafe" />
-        <text name="gui_ad_useFastestRoute"							text="En hızlı rotayı kullan" />
-        <text name="gui_ad_useFastestRoute_tooltip"					text="En iyi rotaları hesaplarken yalın mesafe yerine sürüş hızını dikkate alın" />
-        <text name="gui_ad_mapMarkerDetour"							text="Maksimum sapma" />
-        <text name="gui_ad_mapMarkerDetour_tooltip"					text="Hedeflerden kaçınırken uygulanacak maksimum sapma" />
-        <text name="gui_ad_siloEmpty"									text="Silo boşsa" />
-        <text name="gui_ad_siloEmpty_tooltip"							text="Al ve teslim et sürücüsünün boş bir siloya nasıl tepki vereceği" />
-        <text name="gui_ad_useFolders"									text="Klasör kullan" />
-        <text name="gui_ad_useFolders_tooltip"							text="Hedefleri yapılandırmak için klasörleri kullan" />
-        <text name="gui_ad_wait"										text="Bekle" />
-        <text name="gui_ad_drive"										text="Sürmeye devam et" />
-        <text name="gui_ad_off"										text="Kapalı" />
-        <text name="gui_ad_yes"										text="Evet" />
-        <text name="gui_ad_no"											text="Hayır" />
-        <text name="gui_ad_FS22"										text="FS 22" />
-        <text name="gui_ad_FS19"										text="FS 19" />
-        <text name="gui_ad_BSMRange"									text="Bunker Silo Yöneticisi Menzili" />
-        <text name="gui_ad_BSMRange_tooltip"							text="Hedef bunker silosuna giden araçların sırayla yanaşması için menzil" />
-        <text name="gui_ad_UMRange"									text="Bunker Silo / Boşaltma Yöneticisi Menzili" />
-        <text name="gui_ad_UMRange_tooltip"							text="Hedef bunker veya aynı boşaltma noktasına giden araçların sırayla yanaşması için menzil" />
-        <text name="ad_bga_init"										text="Başlatılıyor" />
-        <text name="ad_bga_waiting"									text="Römork/silo bekleniyor" />
-        <text name="ad_bga_active"										text="Etkin" />
-        <text name="gui_ad_autoConnect_start"							text="Otomatik bağlan (başlangıç)" />
-        <text name="gui_ad_autoConnect_start_tooltip"					text="Kayıt başlangıcında uygun düğüme otomatik bağlan" />
-        <text name="gui_ad_autoConnect_end"							text="Otomatik bağlan (bitiş)" />
-        <text name="gui_ad_autoConnect_end_tooltip"					text="Kayıt bitişinde uygun düğüme otomatik bağlan" />
-        <text name="gui_ad_parkInField"								text="Tarlaya park et" />
-        <text name="gui_ad_parkInField_tooltip"						text="Biçerdöveri boşalttıktan sonra - ekinin içinde park edilmediyse" />
-        <text name="gui_ad_unloadFillLevel"							text="Şu seviyede boşalt" />
-        <text name="gui_ad_unloadFillLevel_tooltip"					text="Biçerdöveri boşalttıktan sonra. Doğrudan bu doluluk seviyesinde teslimata git." />
-        <text name="gui_ad_findDriver"									text="Sürücü Bul" />
-        <text name="gui_ad_findDriver_tooltip"							text="Yakınlardaki sürücüleri ara (Hedefi yoksay)" />
-        <text name="gui_ad_gui_scale"									text="AutoDrive HUD için arayüz ölçeği" />
-        <text name="gui_ad_gui_scale_tooltip"							text="Oyun içi ölçeklendirme ayarlarını kullanmak için varsayılanı bırakın" />
-        <text name="gui_ad_notifications"								text="Bildirimler" />
+		<text name="AD_settings_copied"								text="Settings copied" />
+		<text name="AD_settings_pasted"								text="Settings pasted" />
+		<text name="AD_settings_clipboard_empty"						text="Copy settings first!" />
+		<text name="gui_ad_Setting"									text="AutoDrive - Ayarlar" />
+		<text name="gui_ad_collisionHeigth"							text="Yerde çarpışma yüksekliği" />
+		<text name="gui_ad_collisionHeigth_tooltip"					text="Aracın önünde çarpışma algılaması için ayar. Sürüş sırasında diğer araçlar algılanmazsa, adım adım azaltın. (Varsayılan 2m)" />
+		<text name="gui_ad_blinkValue"									text="Otomatik Sinyal" />
+		<text name="gui_ad_blinkValue_tooltip"							text="Sinyalleri otomatik olarak etkinleştirmek için direksiyon açısı. (0 = dönüş ışığı otomatik devre dışı bırakılır)" />
+		<text name="gui_ad_pipe_offset"								text="Boru Ofseti" />
+		<text name="gui_ad_pipe_offset_tooltip"						text="Additional offset applied to the detected pipe position" />
+		<text name="gui_ad_followDistance"								text="Biçerdöver mesafesi" />
+		<text name="gui_ad_followDistance_tooltip"						text="Biçerdöverin arkasını takip ederken uzak durulan mesafe" />
+		<text name="gui_ad_lookahead_turning"							text="İleriye bakma mesafesi (dönüş)" />
+		<text name="gui_ad_lookahead_turning_tooltip"					text="Bir sonraki segmenti takip etmek için direksiyonu ayarlamak için aracın ileriye baktığı mesafe" />
+		<text name="gui_ad_useFastestRoute"							text="En hızlı Rotayı kullan" />
+		<text name="gui_ad_useFastestRoute_tooltip"					text="En iyi rotaları hesaplarken basit mesafeler yerine sürüş hızını dikkate alın" />
+		<text name="gui_ad_mapMarkerDetour"							text="Maksimum sapma" />
+		<text name="gui_ad_mapMarkerDetour_tooltip"					text="Hedeflerden kaçarken maksimum sapma" />
+		<text name="gui_ad_siloEmpty"									text="Silo boşsa" />
+		<text name="gui_ad_siloEmpty_tooltip"							text="Toplama ve teslimat sürücüsü boş bir siloya nasıl tepki verir?" />
+		<text name="gui_ad_useFolders"									text="Klasörleri kullan" />
+		<text name="gui_ad_useFolders_tooltip"							text="Hedefleri yapılandırmak için klasörleri kullanın" />
+		<text name="gui_ad_wait"										text="Bekle" />
+		<text name="gui_ad_drive"										text="Sür" />
+		<text name="gui_ad_off"										text="Off" />
+		<text name="gui_ad_yes"										text="Evet" />
+		<text name="gui_ad_no"											text="Hayır" />
+		<text name="gui_ad_FS22"										text="FS 22" />
+		<text name="gui_ad_FS19"										text="FS 19" />
+		<text name="gui_ad_BSMRange"									text="Bunker Silo Manager Range" />
+		<text name="gui_ad_BSMRange_tooltip"							text="In this range vehicles to destination bunker silo one by one get driveway" />
+		<text name="gui_ad_UMRange"									text="Bunker Silo / Unload Manager Range" />
+		<text name="gui_ad_UMRange_tooltip"							text="In this range vehicles to destination bunker silo / same unload destination one by one get driveway" />
+		<text name="ad_bga_init"										text="Başlatılıyor" />
+		<text name="ad_bga_waiting"									text="Treyler / silo bekleniyor" />
+		<text name="ad_bga_active"										text="Aktif" />
+		<text name="gui_ad_autoConnect_start"							text="Otomatik bağlan (başlat)" />
+		<text name="gui_ad_autoConnect_start_tooltip"					text="Kayıt başlangıcında uygun düğümü otomatik olarak bağlayın" />
+		<text name="gui_ad_autoConnect_end"							text="Otomatik bağlan (son)" />
+		<text name="gui_ad_autoConnect_end_tooltip"					text="Kaydın sonunda uygun düğümü otomatik olarak bağlayın" />
+		<text name="gui_ad_parkInField"								text="Tarlaya park et" />
+		<text name="gui_ad_parkInField_tooltip"						text="Bir biçerdöverin boşaltılmasından sonra - meyveye park edilmemişse" />
+		<text name="gui_ad_unloadFillLevel"							text="Doldurma seviyesini boşalt" />
+		<text name="gui_ad_unloadFillLevel_tooltip"					text="Biçerdöver boşaldıktan sonra doğrudan bu doldurma seviyesinde dağıtıma gidin." />
+		<text name="gui_ad_findDriver"									text="Sürücü Bul" />
+		<text name="gui_ad_findDriver_tooltip"							text="Sürücülere göre yakın ara (Hedefi yoksay)" />
+		<text name="gui_ad_gui_scale"									text="AutoDrive HUD için Gui ölçeği" />
+		<text name="gui_ad_gui_scale_tooltip"							text="Oyun ölçekleme ayarlarında kullanmak için varsayılan olarak bırakın" />
+		<text name="gui_ad_notifications"								text="Bildirimler" />
 		<text name="gui_ad_notifications_text_1"						text="Devre dışı" />
 		<text name="gui_ad_notifications_text_2"						text="Kısa" />
 		<text name="gui_ad_notifications_text_3"						text="Varsayılan" />
 		<text name="gui_ad_notifications_text_4"						text="Uzun" />
 		<text name="gui_ad_notifications_text_5"						text="Ekstra uzun" />
-        <text name="gui_ad_notifications_text_6"						text="Sonsuz" />
-        <text name="gui_ad_notifications_tooltip"						text="Bildirim görüntülenme süresi: Gösterme / yakl. 2,5s / 5s / 10s / 25s / Kullanıcı kapatana kadar göster" />
-        <text name="gui_ad_exitField"									text="Tarladan çıkış" />
-        <text name="gui_ad_exitField_tooltip"							text="Boşaltıcı için tarladan çıkış stratejisi" />
-        <text name="gui_ad_default"									text="Varsayılan" />
-        <text name="gui_ad_after_start"								text="Başlangıcın Arkasında" />
-        <text name="gui_ad_closest"									text="En yakın nokta" />
-        <text name="gui_ad_showHelp"									text="Yardımı göster" />
-        <text name="gui_ad_showHelp_tooltip"							text="Tuş atamalarını F1 penceresinde göster" />
-        <text name="gui_ad_driverWages"								text="Sürücü maaşları" />
-        <text name="gui_ad_driverWages_tooltip"						text="Sürücü maaşları bu değerle çarpılacaktır" />
-        <text name="gui_ad_showNextPath"								text="Sonraki rotayı göster" />
-        <text name="gui_ad_showNextPath_tooltip"						text="Sonraki iki ara noktanın görüntülenmesini Aç/Kapat" />
-        <text name="gui_ad_avoidFruit"									text="Ekinden kaçın" />
-        <text name="gui_ad_avoidFruit_tooltip"							text="Biçerdöver boşaltıcısı ekine zarar vermekten kaçınmaya çalışır" />
-        <text name="gui_ad_pathFinderTime"								text="Rota bulucu çarpanı" />
-		<text name="gui_ad_pathFinderTime_tooltip" text="Rota bulma algoritmasının, biçerdövere giden/gelen çarpışmasız bir yol aramak için ne kadar süre/çaba harcayacağını belirler. Yeterli sıra başı (dönüş alanı) olan büyük tarlalarda ekin ezmesini önleme özelliği çalışmadığı durumlarda sadece biraz artırılmalıdır." />
-        <text name="gui_ad_lineHeight"									text="Çizgi yüksekliği" />
-        <text name="gui_ad_lineHeight_tooltip"							text="Düzenleyici modunda çizgi yüksekliği. Zemin seviyesinde veya traktörün üstünde" />
-        <text name="gui_ad_ground"										text="Zemin seviyesinde" />
-        <text name="gui_ad_aboveDriver"								text="Traktörün üstünde" />
-        <text name="gui_ad_enableTrafficDetection"						text="Çarpışma algılama" />
-        <text name="gui_ad_enableTrafficDetection_tooltip"				text="Yapay zeka trafiği, işaretleri, çitleri vb. de algılayan gelişmiş çarpışma algılama. Kapalı olduğunda, standart FS 22 veya FS 19 çarpışmasını algılar" />
-        <text name="gui_ad_shovelWidth"								text="Kepçe genişliği (İlave)" />
-        <text name="gui_ad_shovelWidth_tooltip"						text="Otomatik olarak algılanan kepçe genişliği çok küçükse, bu değerle artırılabilir" />
-        <text name="gui_ad_preCallLevel"								text="Ön çağrı seviyesi" />
-        <text name="gui_ad_preCallLevel_tooltip"						text="Belirtilen dolum seviyesinde boşaltıcıyı önceden çağır." />
-        <text name="gui_ad_chaseSide"									text="Biçerdöver Boşaltma Tarafı" />
-        <text name="gui_ad_chaseSide_tooltip"							text="Boşaltıcı yalnızca biçerdöverin şu tarafını kullanacaktır: otomatik, sol, arka, sağ" />
-        <text name="gui_ad_none"										text="Hiçbiri" />
-        <text name="gui_ad_onlyPickup"									text="Yalnızca Al" />
-        <text name="gui_ad_onlyDeliver"								text="Yalnızca Teslim Et" />
-        <text name="gui_ad_PickupandDeliver"							text="Al ve Teslim Et" />
-        <text name="gui_ad_rotateTargets"								text="Al ve Teslim Et arasında geçiş yap" />
-        <text name="gui_ad_rotateTargets_tooltip"						text="4 Mod: Hedeflerde değişiklik yok / yalnızca Alım Hedefleri / yalnızca Teslimat Hedefleri / Klasördeki Alım ve Teslimat hedeflerinde geçiş yapılır (varsayılan klasörle değil) (yalnızca klasör kullanımı aktifse geçerlidir)" />
-        <text name="gui_ad_maxTriggerDistance"							text="Maksimum tetik mesafesi" />
-        <text name="gui_ad_maxTriggerDistance_tooltip"					text="Tetikleyicilerin tespit edildiği ve aktifleştiği hedefe olan mesafe." />
-        <text name="gui_ad_useGlobalSetting"							text="Genel ayarı kullan" />
-        <text name="gui_ad_useBeaconLights"							text="Döner tepe lambaları" />
-        <text name="gui_ad_useBeaconLights_tooltip"					text="Evet - Tepe lambaları tarlaların dışında otomatik kullanılır / Hayır - tepe lambaları otomatik açılıp kapanmaz" />
-        <text name="gui_ad_worklightsWhenLoading"						text="Yükleme / Boşaltma Sırasında Çalışma Işıkları" />
-        <text name="gui_ad_worklightsWhenLoading_tooltip"				text="Evet - Bir tetikleyicide yükleme veya boşaltma yaparken çalışma ışıklarını kullan" />
-        <text name="gui_ad_worklightsWhenSilo"							text="Silo Deposundayken Çalışma Işıkları" />
-        <text name="gui_ad_worklightsWhenSilo_tooltip"					text="Evet - Silo deposundayken çalışma ışıklarını kullan" />
-        <text name="gui_ad_hazardLightReverse"							text="Dörtlü Flaşörler" />
-        <text name="gui_ad_hazardLightReverse_tooltip"					text="Evet - Geri sürüş esnasında dörtlü flaşörleri kullan" />
-        <text name="gui_ad_activeUnloading"							text="Aktif boşaltma" />
-        <text name="gui_ad_activeUnloading_tooltip"					text="Biçerdöverleri sürüş sırasında boşalt." />
-        <text name="gui_ad_restrictToField"							text="Rota bulucuyu tarlayla sınırla" />
-        <text name="gui_ad_restrictToField_tooltip"					text="Eğer boşaltıcı zaten tarlada park halindeyse, rota bulucu kendini tarla sınırlarıyla kısıtlar." />
-        <text name="gui_ad_showTooltips"								text="Araç ipuçlarını göster" />
-        <text name="gui_ad_showTooltips_tooltip"						text="HUD'daki düğmelerin araç ipuçlarını göster." />
-        <text name="gui_ad_enterTargetNameTitle_add"					text="Hedef Ekle" />
-        <text name="gui_ad_enterTargetNameTitle_edit"					text="Hedefi Düzenle" />
-        <text name="gui_ad_enterTargetNameText"						text="Hedef adı girin:" />
-        <text name="gui_ad_createButtonText"							text="Oluştur" />
-        <text name="gui_ad_enterDriverNameTitle"						text="Sürücüyü Yeniden Adlandır" />
-        <text name="gui_ad_enterDriverNameText"						text="Sürücü adı girin:" />
-        <text name="gui_ad_enterGroupNameTitle"						text="Klasör Oluştur" />
-        <text name="gui_ad_enterGroupNameText"							text="Klasör adı girin:" />
-        <text name="gui_ad_autoRefuel"									text="Otomatik Yakıt İkmali" />
-        <text name="gui_ad_autoRefuel_tooltip"							text="Yakıt seviyesi düştüğünde yakıt ikmali hedefine (yakıt tetikleyicisine yakın) sür." />
-        <text name="gui_ad_autoRepair"									text="Otomatik Tamir" />
-        <text name="gui_ad_autoRepair_tooltip"							text="Aşınma seviyesi çok yüksek olduğunda tamir atölyesi hedefine (tamir tetikleyicisine yakın) sür." />
-        <text name="gui_ad_filter"										text="Filtre" />
-        <text name="gui_ad_enterDestinationFilterTitle"				text="Hedef filtresi metnini değiştir" />
-        <text name="gui_ad_enterDestinationFilterText"					text="Filtre metni girin:" />
-        <text name="gui_ad_shovelHeight"								text="Kepçe yüksekliği" />
-        <text name="gui_ad_shovelHeight_tooltip"						text="Eğer otomatik algılanan kepçe yüksekliği yanlışsa. Hedef zemin yüksekliğini ayarlamak için bunu kullanın" />
-        <text name="gui_ad_showMarkersOnMap"							text="İşaretçileri göster" />
-        <text name="gui_ad_showMarkersOnMap_tooltip"					text="İşaretçileri/hedefleri ana haritada/oyun içi haritada göster" />
-        <text name="gui_ad_mainMenuMap"								text="Ana menü haritası" />
-        <text name="gui_ad_ingameMap"									text="Oyun içi harita" />
-        <text name="gui_ad_both"										text="Her İkisi" />
-        <text name="gui_ad_switchToMarkersOnMap"						text="İşaretçilere geç" />
-        <text name="gui_ad_switchToMarkersOnMap_tooltip"				text="Haritadaki noktalara tıklandığında hedef/boşaltma hedefi ayarla" />
-        <text name="gui_ad_cornerSpeed"								text="Dönüş hızı" />
-        <text name="gui_ad_cornerSpeed_tooltip"						text="Her araç için ayrı ayrı dönüş hızını ayarlayın. Araç kütlesi ve mevcut hız yine de fren noktasını etkileyecektir." />
-        <text name="gui_ad_callSecondUnloader"							text="2. Boşaltıcıyı Çağır" />
-        <text name="gui_ad_callSecondUnloader_tooltip"					text="Mevcut boşaltıcı ön çağrı doluluk seviyesine ulaştığında 2. Boşaltıcıyı çağır" />
-        <text name="gui_ad_followOnlyOnField"							text="Boşaltıcıyı tarlayla sınırla" />
-        <text name="gui_ad_followOnlyOnField_tooltip"					text="Aktif boşaltma yaparken boşaltıcıyı sadece tarlayla sınırla" />
-        <text name="gui_ad_addSettingsToHUD"							text="Ayarları HUD'a ekle" />
-        <text name="gui_ad_addSettingsToHUD_tooltip"					text="Bu menüyü açmadan ayarları değiştirmek için HUD'a butonlar ekler" />
-        <text name="gui_ad_iconSetToUse"								text="Logo kişiselleştirme" />
-        <text name="gui_ad_iconSetToUse_tooltip"						text="Varsayılan logo veya kişiselleştirilmiş logo - Seçenekler genişletilebilir." />
-        <text name="gui_ad_secondEditorModeAllowed"					text="2. düzenleyici modunu kullan" />
-        <text name="gui_ad_secondEditorModeAllowed_tooltip"			text="Rota manipülasyonu için LCTRL'ye basılı tutmak yerine 2. düzenleyici modunu kullan" />
-        <text name="gui_ad_wideHUD"									text="Geniş HUD" />
-        <text name="gui_ad_wideHUD_tooltip"							text="HUD'da biraz daha fazla ayar düğmesine izin veren geniş HUD modunu kullan" />
-        <text name="gui_ad_playSounds"									text="Ses" />
-        <text name="gui_ad_playSounds_tooltip"							text="Fare tıklamaları ve bildirimler için ses efektlerini etkinleştirir" />
-        <text name="gui_ad_scaleLines"									text="Çizgileri Ölçeklendir" />
-        <text name="gui_ad_scaleLines_tooltip"							text="Bağlantı çizgilerinin kalınlığını ölçeklendirir" />
-        <text name="gui_ad_scaleMarkerText"							text="Hedef Adını Ölçeklendir" />
-        <text name="gui_ad_scaleMarkerText_tooltip"					text="Hedef adlarının boyutunu ölçeklendirir" />
-        <text name="gui_ad_syncMultiTargets"							text="Çoklu hedefleri senkronize et" />
-        <text name="gui_ad_syncMultiTargets_tooltip"					text="Çoklu hedefler için aynı klasörü kullanan birden fazla sürücü, sonraki hedefleri senkronize edecektir" />
-        <text name="gui_ad_enableParkAtJobFinished"					text="İş bittiğinde park et" />
-        <text name="gui_ad_enableParkAtJobFinished_tooltip"			text="Sadece Al ve Teslim Et/Teslim Et Modlarında geçerlidir: İş bittiğinde, aracın / ekipmanın kaydedilen park konumuna gidilir. Atanmış (Dedi) Sunucularda yalnızca araç park yeri için geçerlidir!" />
-        <text name="gui_ad_autoTipSide"								text="Otomatik Boşaltma Yönü" />
-        <text name="gui_ad_autoTipSide_tooltip"						text="Evet - AutoDrive boşaltma yönünü otomatik seçer / Hayır - önceden seçilmiş boşaltma yönü kullanılır" />
-        <text name="gui_ad_autoTrailerCover"							text="Otomatik Römork Kapakları" />
-        <text name="gui_ad_autoTrailerCover_tooltip"					text="Evet - AutoDrive römork kapaklarını gerektiğinde açıp kapatır / Hayır - römork kapakları AutoDrive tarafından müdahale edilmez" />
-        <text name="gui_ad_useForwardTurningManoeuvre"					text="İleriye dönük manevra" />
-        <text name="gui_ad_useForwardTurningManoeuvre_tooltip"			text="Evet - AutoDrive boşaltıcıları, biçerdöverin 90° dönüşlerine uyum sağlamak için ileriye doğru bir yol planlamaya çalışır. / Hayır - Boşaltıcılar dönüşten önce geri manevra yapar" />
-        <text name="gui_ad_ALUnload"									text="Otomatik Yükleme: Boşaltma Konumu" />
-        <text name="gui_ad_ALUnload_tooltip"							text="Kapalı - otomatik boşaltma yok, merkez - yükleme platformuna boşaltır, sol / sağ - araca göre boşaltma noktası (Konumlar araç ayarına bağlıdır, AD'ye değil!)" />
-        <text name="gui_ad_Text_all"									text="Tümü" />
-        <text name="gui_ad_AL_off"										text="Boşaltma Kapalı" />
-        <text name="gui_ad_AL_center"									text="Ortaya boşalt" />
-        <text name="gui_ad_AL_left"									text="Sola boşalt" />
-        <text name="gui_ad_AL_behind"									text="Arkaya boşalt" />
-        <text name="gui_ad_AL_right"									text="Sağa boşalt" />
-        <text name="gui_ad_ALUnloadWaitTime"							text="Otomatik Yükleme: yükleme/boşaltma bekleme süresi" />
-        <text name="gui_ad_ALUnloadWaitTime_tooltip"					text="Yükleme/boşaltma sonrası sürmeye devam etmeden önceki bekleme süresi - üretim yerlerinde veya boşaltma merkezlerinde yükleme yaparken faydalıdır: 0 - bekleme yok, seçilen süre boyunca bekle" />
-        <text name="gui_ad_scanConfirmationTextTitle"					text="AutoDrive - Ağ Oluşturma" />
-        <text name="gui_ad_scanConfirmationText"						text="AutoDrive haritadaki trafik ve yardımcı verilerinden bir rota ağı oluştursun mu?" />
-        <text name="gui_ad_noHarvesterAvailable"						text="Aynı hedefe sahip biçerdöver bulunamadı" />
-        <text name="gui_ad_noUnloaderAvailable"						text="Aynı hedefe sahip bir sürücü mevcut değil" />
-        <text name="gui_ad_remainingDriveTimeInterval"					text="Kalan Sürüş Süresi" />
-        <text name="gui_ad_remainingDriveTimeInterval_tooltip"			text="Dış modlar için: Kalan sürüş süresini hesaplamak için aralık. Performans sorunları yaşanırsa süreyi artırın veya devre dışı bırakın." />
-        <text name="gui_ad_adpd_showError"								text="AutoDrive: Ağ tutarsız ve içe aktarılamadı, hata kodu" />
-        <text name="gui_ad_adpd_showConfirmation"						text="AutoDrive: Yerleştirilebilir nesneden AD Ağını içe aktarmak ister misiniz?" />
-        <text name="gui_ad_pathfinder"									text="Rota bulucu algoritması" />
-        <text name="gui_ad_pathfinder_tooltip"							text="Hangi rota bulucu algoritmasının kullanılacağını seçin (ağ üzerinde olmadığında)" />
-        <text name="gui_ad_pathfinder_astar"							text="A-Star + Dubbins" />
-        <text name="gui_ad_pathfinder_custom"							text="AutoDrive Özel" />
-        <text name="gui_ad_enableRoutesManagerOnDediServer"			text="Sunucuda Rota Yöneticisi" />
-        <text name="gui_ad_enableRoutesManagerOnDediServer_tooltip"	text="Atanmış sunucularda rota yöneticisini etkinleştir" />
-        <text name="gui_ad_autostartHelpers"							text="Yardımcıları otomatik başlat" />
-        <text name="gui_ad_autostartHelpers_tooltip"					text="Bir oyun kaydı yüklendikten sonra aktif yardımcıları otomatik olarak yeniden başlatır" />
-        <text name="gui_ad_detectSwath"								text="Ekin yığını tespiti" />
-        <text name="gui_ad_detectSwath_tooltip"						text="Ekin yığınlarının tarlada ekin olarak algılanıp algılanmayacağına karar verir" />
-        <text name="gui_ad_colorAssignmentMode"						text="Özel renkler" />
-        <text name="gui_ad_colorAssignmentMode_tooltip"				text="AutoDrive için özel renk seçimini etkinleştirir" />
-        <text name="gui_ad_FoldImplements"								text="Ekipmanları katla" />
-        <text name="gui_ad_FoldImplements_tooltip"						text="AutoDrive başlatmadan önce ekipmanların katlanmasını bekleyecektir" />
-        <text name="gui_ad_RecordWhileNotInVehicle"					text="Sürücü olmadan kaydet" />
-        <text name="gui_ad_RecordWhileNotInVehicle_tooltip"			text="Sürücü araçtan ayrılırsa AutoDrive kaydetmeye devam eder. Bu ayar bilerek kaydedilmez!" />
-        <text name="gui_ad_RecordDriveDirectionOffset"					text="Sürüş yönüne doğru offset kaydet" />
-        <text name="gui_ad_RecordDriveDirectionOffset_tooltip"			text="Kaydı araçtan sola (-0.1 .. -6m) veya sağa (0.1 .. 6m) taşıyın. Geri gitmek kaydı durdurur!" />
-        <text name="gui_ad_RecordOppositeDriveDirectionOffset"			text="Sürüş yönünün tersine offset kaydet" />
-        <text name="gui_ad_RecordOppositeDriveDirectionOffset_tooltip"	text="Kaydı araçtan sola (-0.1 .. -6m) veya sağa (0.1 .. 6m) taşıyın. Geri gitmek kaydı durdurur!" />
-        <text name="gui_ad_settingsPage_title"							text="Ayarlar - AutoDrive" />
-        <text name="gui_ad_userSettingsPage_title"						text="Kullanıcı Ayarları - AutoDrive" />
-        <text name="gui_ad_vehicleSettingsPage_title"					text="Araç Ayarları - AutoDrive" />
+		<text name="gui_ad_notifications_text_6"						text="Sonsuz" />
+		<text name="gui_ad_notifications_tooltip"						text="Bildirimler için görüntüleme süresi: görüntüleme yok / ca. 2,5s / 5s / 10s / 25s / Kullanıcı kapatana kadar göster" />
+		<text name="gui_ad_exitField"									text="Tarladan çıkış" />
+		<text name="gui_ad_exitField_tooltip"							text="Boşaltma için tarladan çıkış stratejisi" />
+		<text name="gui_ad_default"									text="Varsayılan" />
+		<text name="gui_ad_after_start"								text="Başlangıç ​​Arkasında" />
+		<text name="gui_ad_closest"									text="En yakın nokta" />
+		<text name="gui_ad_showHelp"									text="Yardımı göster" />
+		<text name="gui_ad_showHelp_tooltip"							text="F1 penceresinde tuş bağlamayı görüntüle" />
+		<text name="gui_ad_driverWages"								text="Sürücü ücretleri" />
+		<text name="gui_ad_driverWages_tooltip"						text="Sürücü ücretleri bu değer ile çarpılacaktır" />
+		<text name="gui_ad_showNextPath"								text="Sonraki yolu göster" />
+		<text name="gui_ad_showNextPath_tooltip"						text="Sonraki iki yolnoktasının görüntülenmesini Etkinleştir / Devre Dışı Bırak" />
+		<text name="gui_ad_avoidFruit"									text="Meyveden kaçının" />
+		<text name="gui_ad_avoidFruit_tooltip"							text="Kombine boşaltıcı, meyve tahribatını önlemeye çalışır" />
+		<text name="gui_ad_pathFinderTime"								text="Yol bulucu süresi (maks.)" />
+		<text name="gui_ad_pathFinderTime_tooltip"						text="Yol bulma algoritmasının birleştirmeye / birleştirmeden çarpışmasız yolu aramasına ne kadar süre izin verileceğini belirler. (Potansiyel fps etkisi)" />
+		<text name="gui_ad_lineHeight"									text="Satır yüksekliği" />
+		<text name="gui_ad_lineHeight_tooltip"							text="Düzenleyici modunda satır yüksekliği. Ya zemin seviyesinde ya da traktörün üstünde" />
+		<text name="gui_ad_ground"										text="Zemin kat" />
+		<text name="gui_ad_aboveDriver"								text="Traktörün üstünde" />
+		<text name="gui_ad_enableTrafficDetection"						text="Çarpışma algılama" />
+		<text name="gui_ad_enableTrafficDetection_tooltip"				text="Yapay zeka trafiğini, işaretleri, çitleri vb. Algılayan gelişmiş çarpışma algılama Off, detect FS 22 or FS 19 collision" />
+		<text name="gui_ad_shovelWidth"								text="Kürek genişliği (Ekleme)" />
+		<text name="gui_ad_shovelWidth_tooltip"						text="Otomatik olarak algılanan kepçe genişliği çok küçükse bu değer ile artırılabilir." />
+		<text name="gui_ad_preCallLevel"								text="Çağrı öncesi seviyesi" />
+		<text name="gui_ad_preCallLevel_tooltip"						text="Ayarlanan doldurma seviyesinde ön çağrı boşaltıcı." />
+		<text name="gui_ad_chaseSide"									text="Chopper Unload Side" />
+		<text name="gui_ad_chaseSide_tooltip"							text="Unloader will use only this side from Chppers perspective: automatic, left, behind, right" />
+		<text name="gui_ad_none"										text="Yok" />
+		<text name="gui_ad_onlyPickup"									text="sadece Pickup" />
+		<text name="gui_ad_onlyDeliver"								text="sadece teslim et" />
+		<text name="gui_ad_PickupandDeliver"							text="Toplama ve Teslim Etme" />
+		<text name="gui_ad_rotateTargets"								text="Döngü Toplama ve Teslim Etme" />
+		<text name="gui_ad_rotateTargets_tooltip"						text="4 Mod: Hedeflerde değişiklik yok / yalnızca Toplama Hedefleri / yalnızca Hedefleri Teslim Et / Klasördeki Alım ve Teslim Hedefleri döngü halinde (varsayılan klasörle değil) (yalnızca klasörleri kullan etkinse dikkate alınır)" />
+		<text name="gui_ad_maxTriggerDistance"							text="Maksimum tetik mesafesi" />
+		<text name="gui_ad_maxTriggerDistance_tooltip"					text="Tetikleyicilerin algılandığı ve etkinleştirildiği hedefe olan mesafe." />
+		<text name="gui_ad_useGlobalSetting"							text="Use global setting" />
+		<text name="gui_ad_useBeaconLights"							text="Uyarı ışıkları" />
+		<text name="gui_ad_useBeaconLights_tooltip"					text="Evet - Alanların dışında otomatik olarak uyarı ışıkları kullan / Hayır - uyarı ışıkları otomatik olarak açılmayacak veya kapanmayacak" />
+		<text name="gui_ad_worklightsWhenLoading"						text="Worklight when Loading / Unloading" />
+		<text name="gui_ad_worklightsWhenLoading_tooltip"				text="Yes - Use working lights when loading or unloading at a trigger" />
+		<text name="gui_ad_worklightsWhenSilo"							text="Worklight when in a Silo Bunker" />
+		<text name="gui_ad_worklightsWhenSilo_tooltip"					text="Yes - Use working lights when in a silo bunker" />
+		<text name="gui_ad_hazardLightReverse"							text="Hazard Lights" />
+		<text name="gui_ad_hazardLightReverse_tooltip"					text="Yes - Use hazard lights while reverse driving" />
+		<text name="gui_ad_activeUnloading"							text="Active unloading" />
+		<text name="gui_ad_activeUnloading_tooltip"					text="Unload harvesters while driving." />
+		<text name="gui_ad_restrictToField"							text="Yol bulucuyu alanla sınırla" />
+		<text name="gui_ad_restrictToField_tooltip"					text="Boşaltıcı sahaya zaten park edilmişse, yol bulucuyu alan sınırlarıyla sınırlayacaktır." />
+		<text name="gui_ad_showTooltips"								text="Araç ipuçlarını göster" />
+		<text name="gui_ad_showTooltips_tooltip"						text="Gösterge Paneli'nde düğme araç ipuçlarını gösterin." />
+		<text name="gui_ad_enterTargetNameTitle_add"					text="Hedef Ekle" />
+		<text name="gui_ad_enterTargetNameTitle_edit"					text="Hedefi Düzenleyin" />
+		<text name="gui_ad_enterTargetNameText"						text="Hedef adı girin:" />
+		<text name="gui_ad_createButtonText"							text="Oluşturmak" />
+		<text name="gui_ad_enterDriverNameTitle"						text="Sürücüyü Yeniden Adlandır" />
+		<text name="gui_ad_enterDriverNameText"						text="Sürücü adını girin:" />
+		<text name="gui_ad_enterGroupNameTitle"						text="Klasör oluşturun" />
+		<text name="gui_ad_enterGroupNameText"							text="Klasör adını girin:" />
+		<text name="gui_ad_autoRefuel"									text="Otomatik Yakıt Doldurma" />
+		<text name="gui_ad_autoRefuel_tooltip"							text="Yakıt seviyesi düşükken yakıt ikmali hedefine (yakıt tetiğine yakın) gidin." />
+		<text name="gui_ad_autoRepair"									text="Automatic Repairing" />
+		<text name="gui_ad_autoRepair_tooltip"							text="Drive to workshop destination (close to repair trigger) when wear level is too high." />
+		<text name="gui_ad_filter"										text="Filtrele" />
+		<text name="gui_ad_enterDestinationFilterTitle"				text="Hedefin filtre metnini değiştir" />
+		<text name="gui_ad_enterDestinationFilterText"					text="Filtre metni ekleyin:" />
+		<text name="gui_ad_shovelHeight"								text="Kürek yüksekliği" />
+		<text name="gui_ad_shovelHeight_tooltip"						text="Otomatik olarak algılanırsa kepçe yüksekliği yanlıştır. Hedef zemin yüksekliğini ayarlamak için bunu kullanın" />
+		<text name="gui_ad_showMarkersOnMap"							text="İşaretçileri göster" />
+		<text name="gui_ad_showMarkersOnMap_tooltip"					text="Oyun içi haritada işaretçileri / hedefleri göster" />
+		<text name="gui_ad_mainMenuMap"								text="Main menu map" />
+		<text name="gui_ad_ingameMap"									text="Ingame map" />
+		<text name="gui_ad_both"										text="Both" />
+		<text name="gui_ad_switchToMarkersOnMap"						text="İşaretçilere geç" />
+		<text name="gui_ad_switchToMarkersOnMap_tooltip"				text="Harita etkin noktalarına tıklandığında hedef / boşaltma hedefi ayarlayın" />
+		<text name="gui_ad_cornerSpeed"								text="Dönüş hızı" />
+		<text name="gui_ad_cornerSpeed_tooltip"						text="Bağımsız araç için dönüş hızını ayarlayın. Kütle ve mevcut hız, fren noktasını etkilemeye devam edecek" />
+		<text name="gui_ad_callSecondUnloader"							text="2. Boşaltıcıyı çağır." />
+		<text name="gui_ad_callSecondUnloader_tooltip"					text="Mevcut boşaltıcı ön doldurma seviyesine ulaştığında 2. Boşaltıcıyı çağır:" />
+		<text name="gui_ad_followOnlyOnField"							text="Boşaltıcıyı alanla sınırla" />
+		<text name="gui_ad_followOnlyOnField_tooltip"					text="Aktif olarak boşaltma sırasında boşaltıcıyı tarlayla kısıtlayın" />
+		<text name="gui_ad_addSettingsToHUD"							text="HUD'ye ayarlar ekleyin" />
+		<text name="gui_ad_addSettingsToHUD_tooltip"					text="Bu menüyü açmadan ayarları değiştirmek için Gösterge Paneli'ne düğmeler ekler" />
+		<text name="gui_ad_iconSetToUse"								text="Logo kişiselleştirme" />
+		<text name="gui_ad_iconSetToUse_tooltip"						text="Varsayılan logo veya kişiselleştirilmiş logo - Seçim genişletilebilir." />
+		<text name="gui_ad_secondEditorModeAllowed"					text="2. düzenleyici modunu kullanın" />
+		<text name="gui_ad_secondEditorModeAllowed_tooltip"			text="LCTRL'yi basılı tutmak yerine rota manipülasyonu için 2. düzenleyici modunu kullanın" />
+		<text name="gui_ad_wideHUD"									text="Geniş HUD" />
+		<text name="gui_ad_wideHUD_tooltip"							text="HUD'da birkaç ayar düğmesine daha izin veren geniş HUD modunu kullanın" />
+		<text name="gui_ad_playSounds"									text="Sound" />
+		<text name="gui_ad_playSounds_tooltip"							text="Enables the sound effects for mouse clicks and notifications" />
+		<text name="gui_ad_scaleLines"									text="Scale Lines" />
+		<text name="gui_ad_scaleLines_tooltip"							text="Scale Thickness of connection lines" />
+		<text name="gui_ad_scaleMarkerText"							text="Scale Destination Name" />
+		<text name="gui_ad_scaleMarkerText_tooltip"					text="Scale Size of Destination Names" />
+		<text name="gui_ad_syncMultiTargets"							text="Birden çok hedefi senkronize et" />
+		<text name="gui_ad_syncMultiTargets_tooltip"					text="Birden çok hedef için aynı klasörü kullanan birden çok sürücü, sonraki hedefleri senkronize edecek" />
+		<text name="gui_ad_enableParkAtJobFinished"					text="Park işi tamamlandı" />
+		<text name="gui_ad_enableParkAtJobFinished_tooltip"			text="Yalnızca Alma ve Teslim Et, Teslim Et Modlarında mevcuttur: İş bittiğinde, aracın / ataşmanın depolanmış park konumuna sürülür. Dedi-Server'da sadece araç park yeri için mevcuttur!" />
+		<text name="gui_ad_autoTipSide"								text="Otomatik Boşaltma Tarafı" />
+		<text name="gui_ad_autoTipSide_tooltip"						text="Evet - AutoDrive otomatik olarak boşaltma tarafını seç / Hayır - önceden seçilmiş olan boşaltma tarafı kullanılacaktır" />
+		<text name="gui_ad_autoTrailerCover"							text="Otomatik römork kapakları" />
+		<text name="gui_ad_autoTrailerCover_tooltip"					text="Evet - AutoDrive gerektiğinde römork kapaklarını açıp kapat / Hayır - römork kapakları AutoDrive tarafından açılmayacak veya kapanmayacak" />
+		<text name="gui_ad_useForwardTurningManoeuvre"					text="Forwards turning manoeuvre" />
+		<text name="gui_ad_useForwardTurningManoeuvre_tooltip"			text="Yes - AutoDrive unloaders try to plan a path forwards to adapt to 90° turns of the combine. / No - Unloaders will reverse before turn" />
+		<text name="gui_ad_ALUnload"									text="AutoLoad: Unload Position" />
+		<text name="gui_ad_ALUnload_tooltip"							text="Off-no automatic unload, center-unload on loading platform, left / right vehicle unload position (Position depend on vehicle setup, not AD!)" />
+		<text name="gui_ad_Text_all"									text="All" />
+		<text name="gui_ad_AL_off"										text="Unload Off" />
+		<text name="gui_ad_AL_center"									text="Unload center" />
+		<text name="gui_ad_AL_left"									text="Unload left" />
+		<text name="gui_ad_AL_behind"									text="Unload behind" />
+		<text name="gui_ad_AL_right"									text="Unload right" />
+		<text name="gui_ad_ALUnloadWaitTime"							text="AutoLoad: wait time after unload" />
+		<text name="gui_ad_ALUnloadWaitTime_tooltip"					text="Wait time after unloading, before continue to drive - useful for unload center: 0-no wait, wait selected time" />
+		<text name="gui_ad_scanConfirmationTextTitle"					text="AutoDrive - Network Generation" />
+		<text name="gui_ad_scanConfirmationText"						text="Should AutoDrive generate a route network from the traffic and helper data on the map?" />
+		<text name="gui_ad_noHarvesterAvailable"						text="No harvester with same target found" />
+		<text name="gui_ad_noUnloaderAvailable"						text="No driver with same target available" />
+		<text name="gui_ad_remainingDriveTimeInterval"					text="Remaining Drive time" />
+		<text name="gui_ad_remainingDriveTimeInterval_tooltip"			text="For external mods: Interval to calculate the remaining drive time. In case of issues with performance increase or deactivate." />
+		<text name="gui_ad_adpd_showError"								text="AutoDrive: The Network is inconsistent and could not be imported, error code" />
+		<text name="gui_ad_adpd_showConfirmation"						text="AutoDrive: Would you like to import the AD Network from the Placeable?" />
+		<text name="gui_ad_pathfinder"									text="Pathfinder algorithm" />
+		<text name="gui_ad_pathfinder_tooltip"							text="Choose which pathfinder algorithm is used (when not on network)" />
+		<text name="gui_ad_pathfinder_astar"							text="A-Star + Dubbins" />
+		<text name="gui_ad_pathfinder_custom"							text="AutoDrive Custom" />
+		<text name="gui_ad_enableRoutesManagerOnDediServer"			text="Routemanager on Server" />
+		<text name="gui_ad_enableRoutesManagerOnDediServer_tooltip"	text="Enable route manager on dedicated servers" />
+		<text name="gui_ad_autostartHelpers"							text="Autostart helpers" />
+		<text name="gui_ad_autostartHelpers_tooltip"					text="Automatically restart active helpers after loading a savegame" />
+		<text name="gui_ad_detectSwath"								text="Swath detection" />
+		<text name="gui_ad_detectSwath_tooltip"						text="Decides if swaths are detected as fruit on field" />
+		<text name="gui_ad_colorAssignmentMode"						text="Custom colors" />
+		<text name="gui_ad_colorAssignmentMode_tooltip"				text="Enables selection of custom colors for AutoDrive" />
+		<text name="gui_ad_FoldImplements"								text="Fold implements" />
+		<text name="gui_ad_FoldImplements_tooltip"						text="AutoDrive will wait for implements to fold up before starting" />
+		<text name="gui_ad_RecordWhileNotInVehicle"					text="Record without driver" />
+		<text name="gui_ad_RecordWhileNotInVehicle_tooltip"			text="AutoDrive will keep recording if driver leaves the vehicle" />
+		<text name="gui_ad_RecordDriveDirectionOffset"					text="Record offset in driving direction" />
+		<text name="gui_ad_RecordDriveDirectionOffset_tooltip"			text="Move recording from vehicle to the left (-0.1 .. -6m) or right (0.1 .. 6m). Driving reverse wil stop recording!" />
+		<text name="gui_ad_RecordOppositeDriveDirectionOffset"			text="Record offset in opposite driving direction" />
+		<text name="gui_ad_RecordOppositeDriveDirectionOffset_tooltip"	text="Move recording from vehicle to the left (-0.1 .. -6m) or right (0.1 .. 6m). Driving reverse wil stop recording!" />
+		<text name="gui_ad_fieldPointOffset"							text="Fieldpoint Offset" />
+		<text name="gui_ad_fieldPointOffset_tooltip"					text="create field points inside (-0.2 .. -6m) or outside (0.2 .. 6m) erzeugen. 0 at field border" />
+		<text name="gui_ad_maxFieldPointDistance"						text="field point max. distance" />
+		<text name="gui_ad_maxFieldPointDistance_tooltip"				text="create field points with max. distance of 2 .. 25 m" />
+		<text name="gui_ad_settingsPage_title"							text="Ayarlar - AutoDrive" />
+		<text name="gui_ad_userSettingsPage_title"						text="Kullanıcı Ayarları - AutoDrive" />
+		<text name="gui_ad_vehicleSettingsPage_title"					text="Araç Ayarları - AutoDrive" />
 		<text name="gui_ad_combineUnloadSettingsPage_title"			text="Biçerdöver boşaltma ayarları - AutoDrive" />
         <text name="gui_ad_debugSettingsPage_title"					text="Hata Ayıklama Ayarları - AutoDrive" />
         <text name="gui_ad_eFeaturesSettingsPage_title"				text="Deneysel Özellik Ayarları - AutoDrive" />

@@ -1,5 +1,5 @@
 AutoDrive = {}
-AutoDrive.version = "3.0.1.2"
+AutoDrive.version = "3.0.1.3.RC"
 
 AutoDrive.directory = g_currentModDirectory
 
@@ -76,6 +76,7 @@ AutoDrive.FLAG_NONE = 0
 AutoDrive.FLAG_SUBPRIO = 1
 AutoDrive.FLAG_TRAFFIC_SYSTEM = 2
 AutoDrive.FLAG_TRAFFIC_SYSTEM_CONNECTION = 4
+AutoDrive.FLAG_FIELD_POINT = 8
 
 -- add this to measured size of vehicles
 AutoDrive.DIMENSION_ADDITION = 0.2
@@ -533,6 +534,17 @@ function AutoDrive:init()
 		AutoDrive.selectedWayPointSample = createSample("AutoDrive_selectedWayPoint")
 		loadSample(AutoDrive.selectedWayPointSample, fileName, false)
 	end
+    -- collect swath fillTypes
+    AutoDrive.windrowCutFillTypes = {}
+    AutoDrive.windrowFillTypes = {}
+    for fruitTypeIndex, fruitType in pairs(g_fruitTypeManager:getFruitTypes()) do
+        if fruitType.windrowCutFillType ~= nil then
+            AutoDrive.windrowCutFillTypes[fruitTypeIndex] = fruitType.windrowCutFillType.index
+        end
+        if fruitType.windrowFillType ~= nil then
+            AutoDrive.windrowFillTypes[fruitTypeIndex] = fruitType.windrowFillType.index
+        end
+    end
 	AutoDrivePlaceableData:setActive(true)
 	AutoDrive:setValidSupportedFillTypesForAllVehicles()
 	AutoDrive:autostartHelpers()
